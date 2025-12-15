@@ -22,6 +22,212 @@
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f1a0a 100%);
             background-attachment: fixed;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* 淺色主題樣式 */
+        html.light body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f0f7e6 100%);
+            color: #1a1a1a;
+        }
+
+        html.light .glass {
+            background: rgba(255, 255, 255, 0.9);
+            border-color: rgba(118, 185, 0, 0.3);
+        }
+
+        html.light .bg-gray-900,
+        html.light .bg-gray-900\/50,
+        html.light .bg-gray-900\/60,
+        html.light .bg-gray-900\/80 {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        html.light .bg-gray-800,
+        html.light .bg-gray-800\/50,
+        html.light .bg-gray-800\/70,
+        html.light .bg-gray-800\/80 {
+            background-color: rgba(245, 245, 245, 0.9) !important;
+        }
+
+        html.light .text-white {
+            color: #1a1a1a !important;
+        }
+
+        html.light .text-gray-300,
+        html.light .text-gray-400 {
+            color: #4a4a4a !important;
+        }
+
+        html.light .text-gray-500 {
+            color: #6a6a6a !important;
+        }
+
+        html.light .border-gray-700,
+        html.light .border-gray-700\/50,
+        html.light .border-gray-800,
+        html.light .border-gray-800\/50 {
+            border-color: rgba(118, 185, 0, 0.2) !important;
+        }
+
+        html.light .info-card {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 20px rgba(118, 185, 0, 0.1);
+        }
+
+        html.light .info-card::before {
+            background: linear-gradient(135deg, #76B900, #a8d94a, #76B900);
+        }
+
+        /* 側邊欄淺色主題 */
+        html.light aside {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 247, 230, 0.95) 100%) !important;
+        }
+
+        html.light aside .text-gray-400 {
+            color: #4a5568 !important;
+        }
+
+        html.light aside .text-gray-500 {
+            color: #718096 !important;
+        }
+
+        html.light aside button:hover {
+            background-color: rgba(118, 185, 0, 0.1) !important;
+        }
+
+        html.light aside ul {
+            border-color: rgba(118, 185, 0, 0.3) !important;
+        }
+
+        html.light footer {
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        html.light .gradient-text {
+            background: linear-gradient(90deg, #5a8f00, #76B900, #5a8f00);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        /* Deep Dive 區域淺色主題 */
+        html.light .text-gray-200 {
+            color: #2d3748 !important;
+        }
+
+        html.light .from-nvidia\/10 {
+            --tw-gradient-from: rgba(118, 185, 0, 0.15) !important;
+        }
+
+        html.light .border-nvidia\/50 {
+            border-color: rgba(118, 185, 0, 0.6) !important;
+        }
+
+        /* 可折疊區塊淺色主題 */
+        html.light .bg-nvidia\/10 {
+            background-color: rgba(118, 185, 0, 0.12) !important;
+        }
+
+        /* 右側欄卡片淺色主題 */
+        html.light select {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            border-color: rgba(118, 185, 0, 0.3) !important;
+            color: #2d3748 !important;
+        }
+
+        html.light select option {
+            background-color: #ffffff;
+            color: #2d3748;
+        }
+
+        /* Quiz 卡片淺色主題 */
+        html.light .bg-green-900\/40 {
+            background-color: rgba(72, 187, 120, 0.2) !important;
+        }
+
+        html.light .bg-red-900\/40 {
+            background-color: rgba(245, 101, 101, 0.2) !important;
+        }
+
+        html.light .text-green-300,
+        html.light .text-green-400 {
+            color: #22543d !important;
+        }
+
+        html.light .text-red-300 {
+            color: #742a2a !important;
+        }
+
+        /* Header 淺色主題 */
+        html.light header {
+            background: rgba(255, 255, 255, 0.95) !important;
+            border-color: rgba(118, 185, 0, 0.2) !important;
+        }
+
+        /* 進度條和指示器淺色主題 */
+        html.light .bg-gray-700 {
+            background-color: rgba(200, 200, 200, 0.5) !important;
+        }
+
+        /* 主題按鈕淺色效果 */
+        html.light button.bg-gray-800\/50 {
+            background-color: rgba(240, 247, 230, 0.9) !important;
+        }
+
+        /* 可折疊區塊按鈕淺色主題 */
+        html.light .bg-gray-900\/50 {
+            background-color: rgba(118, 185, 0, 0.08) !important;
+        }
+
+        html.light .hover\:bg-gray-900\/70:hover {
+            background-color: rgba(118, 185, 0, 0.15) !important;
+        }
+
+        /* 導航箭頭按鈕淺色主題 */
+        html.light .bg-gray-700\/50 {
+            background-color: rgba(118, 185, 0, 0.15) !important;
+        }
+
+        html.light .hover\:bg-gray-600\/50:hover {
+            background-color: rgba(118, 185, 0, 0.25) !important;
+        }
+
+        /* Flash Card 和 Quiz 卡片背景 */
+        html.light .bg-gray-800\/80 {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(118, 185, 0, 0.1);
+        }
+
+        /* 箭頭和圖標顏色 */
+        html.light .text-gray-400 {
+            color: #4a5568 !important;
+        }
+
+        /* Flashcard 內部背景 */
+        html.light .bg-gray-900\/80 {
+            background-color: rgba(118, 185, 0, 0.05) !important;
+        }
+
+        /* Quiz 選項按鈕淺色主題 */
+        html.light .bg-gray-800\/30 {
+            background-color: rgba(200, 200, 200, 0.3) !important;
+        }
+
+        html.light .border-gray-700\/30 {
+            border-color: rgba(118, 185, 0, 0.2) !important;
+        }
+
+        /* Deep Dive 可折疊區塊淺色主題 */
+        html.light .bg-gray-800\/60 {
+            background-color: rgba(118, 185, 0, 0.08) !important;
+        }
+
+        html.light .hover\:border-gray-600:hover {
+            border-color: rgba(118, 185, 0, 0.5) !important;
+        }
+
+        html.light .border-gray-600 {
+            border-color: rgba(118, 185, 0, 0.3) !important;
         }
 
         /* 玻璃態效果 */
@@ -326,6 +532,7 @@
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
+            pointer-events: none;
         }
 
 
@@ -676,7 +883,10 @@
                                     ],
                                     themes: [{ title: "Why NVIDIA?", subThemes: [{ title: "AI Revolution Leader", content: "NVIDIA is at the center of the AI revolution, powering everything from ChatGPT to autonomous vehicles." }, { title: "Platform Company", content: "NVIDIA integrates hardware (GPUs), software (CUDA), and ecosystem (developers) into a cohesive platform." }] }, { title: "Why PM?", subThemes: [{ title: "Strategic Role", content: "PM sits at the intersection of Business, Technology, and User Experience." }, { title: "Ecosystem Architect", content: "At NVIDIA, PM functions as an ecosystem architect, not just a feature manager." }] }],
                                     flashcards: [{ front: "Why NVIDIA?", back: "Platform company at the center of AI revolution, integrating hardware, software, and ecosystem." }, { front: "Why PM?", back: "Strategic role at the intersection of Business, Technology, and User Experience." }],
-                                    quiz: [{ q: "Do you understand our motivation for choosing NVIDIA?" }, { q: "Do you understand why we aspire to the PM role?" }]
+                                    quiz: [
+                                        { q: "According to this page, what type of company is NVIDIA described as?", options: ["Hardware manufacturer only", "Software company", "Platform company integrating hardware, software, and ecosystem", "Consulting firm"], answer: 2 },
+                                        { q: "At which intersection does the PM role sit?", options: ["Sales, HR, Legal", "Business, Technology, User Experience", "Marketing, Finance, Operations", "Manufacturing, Logistics, Support"], answer: 1 }
+                                    ]
                                 }
                             },
                             {
@@ -699,7 +909,10 @@
                                         ],
                                         reflection: "Together, we combined our diverse backgrounds in business strategy, technology analysis, and data science to create this comprehensive NVIDIA PM application."
                                     },
-                                    quiz: [{ q: "Did you watch our introduction videos?" }, { q: "Do you know our team members?" }]
+                                    quiz: [
+                                        { q: "How many team members are in this NVIDIA PM analysis group?", options: ["3", "4", "5", "6"], answer: 2 },
+                                        { q: "What is our team's approach to demonstrating PM capabilities?", options: ["Traditional resume", "Interactive CV website", "Video presentation", "Written report only"], answer: 1 }
+                                    ]
                                 }
                             },
                             {
@@ -767,7 +980,12 @@
                                     ],
                                     themes: [{ title: "Business Segments", subThemes: [{ title: "Graphics & Gaming", content: "GeForce GPUs with real-time ray tracing and AI-powered performance" }, { title: "AI & Data Centers", content: "Powers machine learning, deep learning, LLMs, and computer vision. 80%+ market share in AI chips." }, { title: "Accelerated Computing", content: "Scientific simulations, climate modeling, drug discovery" }, { title: "Autonomous Systems", content: "NVIDIA DRIVE for self-driving cars, robotics, smart factories" }] }, { title: "Latest Products", subThemes: [{ title: "Blackwell (2024)", content: "208B transistors, 25x efficiency vs Hopper, B100/B200/GB200 lineup" }, { title: "Grace Hopper", content: "GH200 Superchip - Arm CPU + Hopper GPU, 900 GB/s bandwidth" }, { title: "H100/H200", content: "Hopper architecture - the current workhorse of AI data centers" }] }, { title: "2024/2025 Milestones", subThemes: [{ title: "Market Cap", content: "$3.3T (Jun 2024) → $5T (Oct 2025) - First company to reach $5T" }, { title: "Revenue", content: "FY2024: $60.9B → FY2025: $130.5B → TTM: $187B" }, { title: "Leadership", content: "Jensen Huang named FT 2025 Person of the Year" }] }],
                                     flashcards: [{ front: "When was NVIDIA founded?", back: "1993 - invented the GPU" }, { front: "NVIDIA Market Cap (2025)", back: "Reached $5 trillion in Oct 2025 - first company ever" }, { front: "NVIDIA FY2025 Revenue", back: "$130.5 billion (TTM reaching $187B)" }, { front: "What is Blackwell?", back: "2024 GPU architecture: 208B transistors, 25x efficiency vs Hopper, for generative AI era" }, { front: "What is Grace Hopper?", back: "GH200 Superchip combining Arm Grace CPU + Hopper GPU, 900 GB/s bandwidth" }, { front: "Jensen Huang's Philosophy", back: "'We are 30 days from going out of business' - drives continuous innovation" }, { front: "AI Chip Market Share", back: "NVIDIA controls over 80% of the market for chips used in AI" }],
-                                    quiz: [{ q: "Do you know NVIDIA's 2025 market cap milestone?" }, { q: "Can you explain the Blackwell architecture?" }, { q: "Do you understand the Grace Hopper Superchip?" }, { q: "Do you know NVIDIA's four business segments?" }]
+                                    quiz: [
+                                        { q: "What historic market cap milestone did NVIDIA reach in October 2025?", options: ["$1 Trillion", "$3 Trillion", "$5 Trillion", "$10 Trillion"], answer: 2 },
+                                        { q: "What is NVIDIA's Blackwell architecture known for?", options: ["Lower power consumption", "208B transistors and 25x efficiency vs Hopper", "Smaller form factor", "Lower price point"], answer: 1 },
+                                        { q: "What is the Grace Hopper Superchip?", options: ["A gaming GPU", "Arm CPU + Hopper GPU combination with 900 GB/s bandwidth", "A cryptocurrency mining card", "An entry-level laptop GPU"], answer: 1 },
+                                        { q: "What was NVIDIA's FY2025 revenue?", options: ["$60.9 billion", "$100 billion", "$130.5 billion", "$200 billion"], answer: 2 }
+                                    ]
                                 }
                             },
 
@@ -802,7 +1020,11 @@
                                     ],
                                     themes: [{ title: "PM as a Bridge", subThemes: [{ title: "Customers/Users", content: "Advocate - researches needs, analyzes feedback, champions voice of customer" }, { title: "Engineers", content: "Communicator - translates vision into prioritized technical requirements" }, { title: "Executives", content: "Strategist - defines strategy, builds roadmap, justifies decisions with data" }, { title: "Designers", content: "Collaborator - ensures product is intuitive and provides excellent UX" }] }, { title: "Core Responsibilities", subThemes: [{ title: "Vision & Strategy", content: "Long-term direction, market analysis, competitive assessment" }, { title: "Prioritization", content: "Decide what to build, manage limited resources" }, { title: "Execution", content: "Agile methodologies, quality standards, deadlines" }, { title: "Metrics", content: "KPIs: adoption, engagement, revenue" }] }],
                                     flashcards: [{ front: "PM Intersection", back: "Business (Strategy, ROI) + Technology (Feasibility) + User Experience (Empathy, UX)" }, { front: "PM Primary Responsibility", back: "Define the WHY, WHAT, and WHEN of a product" }, { front: "PM Core Areas", back: "Vision & Strategy, Prioritization, Execution & Delivery, Setting Metrics" }, { front: "PM Stakeholders", back: "Customers (Advocate), Engineers (Communicator), Executives (Strategist), Designers (Collaborator)" }],
-                                    quiz: [{ q: "Do you understand the PM's three core areas?" }, { q: "Can you explain the PM's role as a bridge?" }, { q: "Do you understand the PM's core responsibilities?" }],
+                                    quiz: [
+                                        { q: "At which intersection does the Product Manager role exist?", options: ["Sales, Marketing, Finance", "Business, Technology, User Experience", "Engineering, Design, Operations", "HR, Legal, Compliance"], answer: 1 },
+                                        { q: "What is the PM's primary responsibility according to this analysis?", options: ["Write code for the product", "Define the WHY, WHAT, and WHEN of a product", "Manage the sales team", "Design the user interface"], answer: 1 },
+                                        { q: "What role does the PM play with engineers?", options: ["Advocate", "Communicator", "Strategist", "Supervisor"], answer: 1 }
+                                    ],
                                     jobLink: "https://nvidia.eightfold.ai/careers?query=PM&start=0&pid=893383960574&sort_by=relevance",
                                     references: ["https://www.britannica.com/money/NVIDIA-Corporation", "https://cacm.acm.org/opinion/nvidia-at-the-center-of-the-generative-ai-ecosystem-for-now/", "https://www.edstellar.com/blog/product-manager-roles-responsibilities", "https://www.invensislearning.com/blog/product-manager-roles-responsibilities/"]
                                 }
@@ -814,7 +1036,7 @@
                         id: 1, title: "2. Insights", icon: "fa-lightbulb", color: "blue",
                         subsections: [
                             {
-                                id: "company-job", title: "Company & Job Analysis", icon: "fa-building", content: {
+                                id: "company-job", title: "Competitive Dynamics", icon: "fa-building", content: {
                                     highlights: ["NVIDIA is a platform orchestrator integrating hardware, software, cloud, and developer ecosystem", "CUDA creates network effects: developers use CUDA → stronger GPU attraction → higher switching costs", "PM at NVIDIA functions as an ecosystem architect, not merely a feature manager"],
                                     fullArticle: [
                                         {
@@ -838,33 +1060,122 @@
                                             title: "Future Outlook", paragraphs: [
                                                 "Recent developments, such as NVIDIA's initiative and partnerships to build a nationwide AI infrastructure in the U.S, show how the company continues expanding through a combination of interoperable services, software, and hardware – a form of platform envelopment that strengthens NVIDIA's position. The strategy is not just to maintain existing advantages, but to build the foundation of a future ecosystem involving multiple parties."
                                             ]
-                                        },
-                                        {
-                                            title: "Job Analysis – Product Manager at NVIDIA U.S", paragraphs: [
-                                                "The role of a Product Manager (PM) at NVIDIA U.S is highly strategic. Unlike PM at traditional companies, NVIDIA's PM functions as an ecosystem architect – not merely a feature or roadmap manager.",
-                                                "They have direct responsibility for designing and managing the platform lifecycle: ensuring that the software stack (such as the CUDA Toolkit, AI libraries, and SDKs) remains backward-compatible, user-friendly, and supports cross-industry interoperability. These are critical components for maintaining growing network effects and keeping the risk of multi-homing low.",
-                                                "Furthermore, the PM must understand the dynamics of co-opetition because NVIDIA's main partners (AWS, Google Cloud, Microsoft Azure) are simultaneously developing their own accelerators. This means the PM must strategize compelling value propositions – for instance, through superior performance, platform stability, cloud integration, or advanced simulation capabilities – so that partners remain dependent on NVIDIA's platform even when they have internal alternatives. The PM's decisions in this case are crucial for maintaining the appropriate balance between openness and control in the platform ecosystem."
-                                            ]
-                                        },
-                                        {
-                                            title: "AMC Framework for PM Role", paragraphs: [
-                                                "The AMC (Awareness-Motivation-Capability) framework is relevant for describing the PM's role at NVIDIA U.S:",
-                                                "• AWARENESS: PMs must possess awareness of substitute innovations such as next-generation TPUs or new AI ASICs (Application-Specific Integrated Circuits).",
-                                                "• MOTIVATION: They need motivation to maintain ecosystem dominance.",
-                                                "• CAPABILITY: They require the technical-business capability to respond effectively through software optimization, performance tuning, and service expansion such as enterprise AI, Omniverse, and DGX Cloud.",
-                                                "Managing AMC effectively is not only about protecting NVIDIA's competitive position but about determining the direction of the entire ecosystem's evolution. Thus, the PM at NVIDIA U.S is a strategic role critical for ensuring the platform's continuity. PMs ensure that interactions among NVIDIA, developers, enterprises, and cloud providers continue to generate positive feedback loops, strengthening the platform's value and minimizing the threat of competitors or technology substitutes."
-                                            ]
                                         }
                                     ],
-                                    themes: [{ title: "Company Analysis – NVIDIA U.S.", subThemes: [{ title: "Platform Orchestrator", content: "NVIDIA positions itself not just as a GPU producer, but as a platform orchestrator that integrates hardware, software, cloud infrastructure, and developer ecosystem into one mutually reinforcing system." }, { title: "Network Effects", content: "Developers use CUDA → Stronger GPU attraction → Higher switching costs for competitors." }, { title: "Multi-sided Platform", content: "DGX Cloud and Omniverse Cloud represent NVIDIA's move toward serving developers, enterprises, cloud providers, and industries." }] }, { title: "Porter's Five Forces", subThemes: [{ title: "Entry Barriers", content: "LOW threat - CUDA ecosystem built over a decade creates high barriers." }, { title: "Bargaining Power", content: "Suppliers: Moderate | Buyers: Moderate to High (big tech developing own chips)" }, { title: "Substitutes & Rivalry", content: "TPUs, Trainium pose threats but face ecosystem limitations. Complex co-opetition dynamics." }] }, { title: "PM Role Analysis", subThemes: [{ title: "Ecosystem Architect", content: "PM manages platform lifecycle, backward compatibility, and cross-industry interoperability." }, { title: "Co-opetition Strategy", content: "Must strategize value propositions while partners develop competing solutions." }, { title: "AMC Framework", content: "Awareness of substitutes, Motivation for dominance, Capability to respond through optimization." }] }],
+                                    jobConnection: {
+                                        title: "Product Manager at NVIDIA U.S.",
+                                        subtitle: "This is the PM role we selected for our analysis",
+                                        connectionExplanation: "Understanding NVIDIA's competitive dynamics is essential for excelling in this PM role. The PM must navigate complex co-opetition relationships, maintain platform lock-in effects, and respond strategically to competitive threats – all concepts analyzed above.",
+                                        keyPoints: [
+                                            { icon: "fa-chess", title: "Ecosystem Architect", description: "PM functions as an ecosystem architect – not merely a feature manager. Direct responsibility for platform lifecycle, backward compatibility, and cross-industry interoperability." },
+                                            { icon: "fa-handshake", title: "Co-opetition Navigator", description: "Must understand that NVIDIA's main partners (AWS, Google Cloud, Microsoft Azure) are simultaneously developing their own accelerators. The PM must strategize compelling value propositions to maintain partner dependency." },
+                                            { icon: "fa-eye", title: "AMC Framework: Awareness", description: "PMs must possess awareness of substitute innovations such as next-generation TPUs or new AI ASICs." },
+                                            { icon: "fa-bullseye", title: "AMC Framework: Motivation", description: "They need motivation to maintain ecosystem dominance and drive continuous platform improvement." },
+                                            { icon: "fa-cogs", title: "AMC Framework: Capability", description: "They require technical-business capability to respond through software optimization, performance tuning, and service expansion (Enterprise AI, Omniverse, DGX Cloud)." }
+                                        ],
+                                        jobLink: "https://nvidia.eightfold.ai/careers?query=PM&start=0&pid=893383960574&sort_by=relevance"
+                                    },
+                                    themes: [{ title: "Company Analysis – NVIDIA U.S.", subThemes: [{ title: "Platform Orchestrator", content: "NVIDIA positions itself not just as a GPU producer, but as a platform orchestrator that integrates hardware, software, cloud infrastructure, and developer ecosystem into one mutually reinforcing system." }, { title: "Network Effects", content: "Developers use CUDA → Stronger GPU attraction → Higher switching costs for competitors." }, { title: "Multi-sided Platform", content: "DGX Cloud and Omniverse Cloud represent NVIDIA's move toward serving developers, enterprises, cloud providers, and industries." }] }, { title: "Porter's Five Forces", subThemes: [{ title: "Entry Barriers", content: "LOW threat - CUDA ecosystem built over a decade creates high barriers." }, { title: "Bargaining Power", content: "Suppliers: Moderate | Buyers: Moderate to High (big tech developing own chips)" }, { title: "Substitutes & Rivalry", content: "TPUs, Trainium pose threats but face ecosystem limitations. Complex co-opetition dynamics." }] }],
                                     flashcards: [{ front: "What is CUDA?", back: "Compute Unified Device Architecture - a parallel computing platform that is the industry standard for AI and HPC applications." }, { front: "PM Role at NVIDIA", back: "Ecosystem architect responsible for platform lifecycle, backward compatibility, and cross-industry interoperability." }, { front: "Network Effects", back: "Developers use CUDA → Stronger GPU attraction → Higher switching costs for competitors" }, { front: "Co-opetition Example", back: "AWS buys thousands of NVIDIA GPUs for cloud services but simultaneously develops internal accelerators." }, { front: "AMC Framework", back: "Awareness-Motivation-Capability: Know substitutes, maintain dominance motivation, have technical-business capability to respond." }],
-                                    quiz: [{ q: "Do you understand NVIDIA's platform orchestrator strategy?" }, { q: "Can you explain the network effects created by CUDA?" }, { q: "Do you understand Porter's Five Forces for NVIDIA?" }, { q: "Do you understand the PM's role as ecosystem architect?" }, { q: "Can you explain the AMC framework for PM?" }],
-                                    jobLink: "https://nvidia.eightfold.ai/careers?query=PM&start=0&pid=893383960574&sort_by=relevance",
+                                    quiz: [
+                                        { q: "What does CUDA stand for?", options: ["Central Unified Data Architecture", "Compute Unified Device Architecture", "Computer Universal Development Application", "Concurrent Utility Design Architecture"], answer: 1 },
+                                        { q: "How does NVIDIA create network effects through its platform?", options: ["By lowering GPU prices", "Developers use CUDA → Stronger GPU attraction → Higher switching costs", "Through exclusive gaming partnerships", "By acquiring competitors"], answer: 1 },
+                                        { q: "What is the PM's primary role at NVIDIA according to this analysis?", options: ["Feature manager", "Sales representative", "Ecosystem architect", "Software developer"], answer: 2 },
+                                        { q: "According to Porter's Five Forces, what is the threat level of new entrants to NVIDIA?", options: ["High - easy to enter", "Low - CUDA ecosystem creates high barriers", "Medium - balanced competition", "Very High - many new competitors"], answer: 1 }
+                                    ],
                                     references: ["https://www.nvidia.com/en-us/data-center/dgx-cloud/", "https://nvidianews.nvidia.com/", "https://docs.nvidia.com/"]
                                 }
                             },
 
-                            { id: "platform", title: "Platform Strategy", icon: "fa-layer-group", content: { highlights: ["NVIDIA's platform ecosystem analysis", "Hardware + Software integration creates moats", "Developer ecosystem as competitive advantage"], themes: [{ title: "CUDA Platform", subThemes: [{ title: "What is CUDA?", content: "[Content: CUDA architecture and capabilities...]" }, { title: "Ecosystem Lock-in", content: "[Content: How CUDA creates switching costs...]" }, { title: "Developer Community", content: "[Content: NVIDIA's developer ecosystem...]" }] }, { title: "Omniverse", subThemes: [{ title: "Platform Overview", content: "[Content: Omniverse architecture...]" }, { title: "Use Cases", content: "[Content: Digital twins, simulation, collaboration...]" }] }, { title: "AI Enterprise", subThemes: [{ title: "Enterprise Stack", content: "[Content: NVIDIA AI Enterprise offerings...]" }] }], flashcards: [{ front: "What is CUDA?", back: "[Parallel computing platform explanation...]" }, { front: "Platform Moats", back: "[How NVIDIA builds competitive advantages...]" }], quiz: [{ q: "Do you understand NVIDIA's platform strategy?" }, { q: "Can you explain CUDA's competitive advantage?" }] } },
+                            {
+                                id: "platform", title: "Platform Strategy", icon: "fa-layer-group", content: {
+                                    highlights: [
+                                        "First-Mover Advantage: CUDA (2006) + AI positioning (2012 AlexNet) + ChatGPT era (2023 H100)",
+                                        "Platform Lock-in Effect: GPU + Software + Consulting services create an integrated solution ecosystem",
+                                        "Differentiated Marketing Strategy: Avoid red ocean competition, wait for right timing to enter new markets"
+                                    ],
+                                    fullArticle: [
+                                        {
+                                            title: "First-Mover Advantage (FMA)", paragraphs: [
+                                                "In 2006, NVIDIA published CUDA (Computing Unified Device Architecture) structure, to pave the way for GPU Parallel Computing. This strategic move positioned NVIDIA years ahead of competitors in the accelerated computing space.",
+                                                "In 2012, after AlexNet used the NVIDIA's GPU to sweep away ImageNet, since then, the company locked the AI down this road as its work. This watershed moment demonstrated the superiority of GPUs for deep learning workloads.",
+                                                "In 2023, ChatGPT rose up, and NVIDIA has already established itself in this by its H100 GPU. Its products are not only in the lead, well-known companies like Meta, Microsoft are willing to be panic-buyers.",
+                                                "This is how NVIDIA got the first-mover advantage: It defined the market, not just waiting for the demand, instead of creating the supply. By investing early in parallel computing infrastructure and AI ecosystems, NVIDIA created a self-reinforcing cycle of developer adoption and hardware excellence."
+                                            ]
+                                        },
+                                        {
+                                            title: "Platform Lock-in Effect", paragraphs: [
+                                                "NVIDIA uses ecological blockade as its defensive strategy. It became a standard in the industry. That is why even both AMD and Google develop their own chips, it's still difficult for them to exceed NVIDIA.",
+                                                "• Complete Solution Ecosystem: NVIDIA not only sells the chips, it sells a set of solutions including GPU, software, consultant service and locks the customers to attract the developers.",
+                                                "• Graphics Card Market Defense: NVIDIA takes the defensive price strategy. When AMD published the competitive pricing products, NVIDIA also published the LHR throttling and tiered SKUs to contain price and defend its market share.",
+                                                "• AI Chip Market Premium: NVIDIA uses its high-density technology and brand image to be in a high pricing area. Also avoiding the price war. This allows NVIDIA to maintain premium margins while competitors struggle to match both performance and ecosystem."
+                                            ]
+                                        },
+                                        {
+                                            title: "Differentiated Marketing Strategy", paragraphs: [
+                                                "NVIDIA does not enter the market blindly. In the non-core field, NVIDIA decided calmly with strategic patience.",
+                                                "• CPU Market Entry: In the CPU market, NVIDIA did not rush to compete head-on with Intel and AMD. Instead, it waited until heterogeneous computing demand in data centers became evident before launching the Grace ARM CPU, which was deeply integrated with its GPUs—entering the market with a differentiated approach from the outset.",
+                                                "• Chiplet Strategy: Similarly, in chiplet design, NVIDIA first observed market reactions to AMD's MI300 before introducing multi-chip packaging in the Blackwell generation, balancing technological maturity with risk control.",
+                                                "This approach demonstrates NVIDIA's strategic discipline: rather than competing in every market immediately, the company waits for the optimal moment when its integrated platform approach provides maximum differentiation."
+                                            ]
+                                        }
+                                    ],
+                                    themes: [
+                                        {
+                                            title: "First-Mover Advantage", subThemes: [
+                                                { title: "CUDA Foundation (2006)", content: "NVIDIA published CUDA structure to pave the way for GPU Parallel Computing, years before AI boom." },
+                                                { title: "AI Positioning (2012)", content: "AlexNet's ImageNet victory using NVIDIA GPUs locked the company onto the AI path." },
+                                                { title: "ChatGPT Era (2023)", content: "H100 GPU made NVIDIA indispensable - Meta, Microsoft became 'panic-buyers' of NVIDIA hardware." }
+                                            ]
+                                        },
+                                        {
+                                            title: "Platform Lock-in Effect", subThemes: [
+                                                { title: "Complete Solution", content: "GPU + Software + Consulting services create an ecosystem that locks customers and attracts developers." },
+                                                { title: "Defensive Pricing", content: "LHR throttling and tiered SKUs defend market share against AMD's competitive pricing." },
+                                                { title: "Premium Positioning", content: "High-density technology and brand image maintain premium pricing in AI chips, avoiding price wars." }
+                                            ]
+                                        },
+                                        {
+                                            title: "Differentiated Marketing", subThemes: [
+                                                { title: "CPU Market Entry", content: "Grace ARM CPU launched only when heterogeneous computing demand became evident, deeply integrated with GPUs." },
+                                                { title: "Chiplet Strategy", content: "Observed AMD's MI300 market reaction before introducing multi-chip packaging in Blackwell generation." },
+                                                { title: "Strategic Patience", content: "Wait for optimal timing when integrated platform approach provides maximum differentiation." }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "When did NVIDIA publish CUDA?", back: "2006 - paving the way for GPU Parallel Computing years before the AI boom." },
+                                        { front: "What was the 2012 turning point?", back: "AlexNet used NVIDIA GPU to win ImageNet, locking the company onto the AI path." },
+                                        { front: "How does NVIDIA create lock-in?", back: "Sells complete solutions: GPU + Software + Consulting services that lock customers and attract developers." },
+                                        { front: "NVIDIA's Graphics Card Defense Strategy", back: "LHR throttling and tiered SKUs to contain price and defend market share against AMD." },
+                                        { front: "Grace CPU Entry Strategy", back: "Waited for heterogeneous computing demand before launching, deeply integrated with GPUs from the start." },
+                                        { front: "Blackwell Chiplet Decision", back: "First observed AMD MI300 reactions before introducing multi-chip packaging, balancing tech maturity with risk." }
+                                    ],
+                                    quiz: [
+                                        {
+                                            q: "When did NVIDIA publish CUDA, laying the foundation for GPU parallel computing?",
+                                            options: ["2002", "2006", "2010", "2012"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "What event in 2012 marked NVIDIA's pivotal turn towards AI?",
+                                            options: ["Release of GeForce RTX", "AlexNet's ImageNet victory using NVIDIA GPUs", "Launch of CUDA platform", "Acquisition of ARM"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "What is NVIDIA's primary platform lock-in strategy?",
+                                            options: ["Low pricing strategy", "GPU + Software + Consulting integrated ecosystem", "Exclusive gaming partnerships", "Patent protection only"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "What is NVIDIA's 'Differentiated Marketing Strategy'?",
+                                            options: ["Aggressive price competition", "Wait for right timing and avoid red ocean competition", "Focus only on gaming market", "Compete directly in all markets immediately"],
+                                            answer: 1
+                                        }
+                                    ],
+                                    references: ["https://vocus.cc/article/6804db71fd89780001959d56"]
+                                }
+                            },
                             {
                                 id: "coopetition", title: "Co-opetition Analysis", icon: "fa-handshake", content: {
                                     highlights: ["NVIDIA's market involves complex relationships with players who are both customers and competitors", "PARTS Framework: Players, Added Values, Rules, Tactics, Scope", "Controls over 80% of the market for chips used in building AI systems"],
@@ -954,7 +1265,28 @@
                                     ],
                                     themes: [{ title: "PARTS Framework", subThemes: [{ title: "Players", content: "Direct Competitors (AMD, Intel), Hyperscaler Competitor-Customers (Google, AWS, Microsoft, Meta), Key Suppliers (TSMC, SK Hynix, Foxconn)" }, { title: "Added Values", content: "80% AI chip market share, CUDA ecosystem, infrastructure for AI revolution, $5T valuation" }, { title: "Rules", content: "CUDA ecosystem lock-in, continuous innovation (Hopper, Blackwell), Blue Ocean Strategy" }] }, { title: "Strategic Tactics", subThemes: [{ title: "Software Ecosystem", content: "CUDA provides sticky tools with high switching costs" }, { title: "Supply Chain", content: "TSMC partnership secures majority of world's advanced chip capacity" }, { title: "Pricing", content: "Value-based premium pricing justified by unmatched performance" }] }, { title: "Market Scope", subThemes: [{ title: "Four Markets", content: "Data Centers, Gaming (GeForce), Professional Visualization (RTX), Automotive (DRIVE)" }, { title: "Vertical Integration", content: "Full-stack: GPUs + Networking + CUDA software ecosystem" }, { title: "Academic Strategy", content: "CUDA integration in universities ensures long-term talent pipeline" }] }],
                                     flashcards: [{ front: "PARTS Framework", back: "Players, Added Values, Rules, Tactics, Scope - A strategic analysis framework for co-opetition" }, { front: "NVIDIA Market Share", back: "Controls over 80% of the market for chips used in building AI systems" }, { front: "Key Competitors", back: "AMD (Radeon, MI400), Intel (Gaudi 3), Google (TPUs), AWS (Trainium/Inferentia)" }, { front: "CUDA Lock-in", back: "Used by 4+ million developers, creates high switching costs - customers must buy NVIDIA hardware" }, { front: "Blue Ocean Strategy", back: "Creating new uncontested markets (autonomous vehicles, LLMs) rather than competing in existing 'red ocean'" }, { front: "Four Primary Markets", back: "Data Centers, Gaming (GeForce), Professional Visualization (RTX), Automotive (DRIVE)" }],
-                                    quiz: [{ q: "Do you understand the PARTS framework?" }, { q: "Can you identify NVIDIA's key players (competitors and partners)?" }, { q: "Do you understand NVIDIA's added value proposition?" }, { q: "Can you explain NVIDIA's ecosystem lock-in strategy?" }, { q: "Do you understand NVIDIA's Blue Ocean Strategy?" }]
+                                    quiz: [
+                                        {
+                                            q: "What does PARTS stand for in the strategic analysis framework?",
+                                            options: ["Products, Assets, Revenue, Technology, Strategy", "Players, Added Values, Rules, Tactics, Scope", "Pricing, Acquisition, Retention, Transformation, Scale", "Partners, Alliances, Resources, Trends, Sales"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "What percentage of the AI chip market does NVIDIA control?",
+                                            options: ["Over 50%", "Over 60%", "Over 70%", "Over 80%"],
+                                            answer: 3
+                                        },
+                                        {
+                                            q: "What is NVIDIA's Blue Ocean Strategy?",
+                                            options: ["Compete aggressively on price", "Create new uncontested markets instead of competing in existing ones", "Focus solely on gaming GPUs", "Partner only with cloud providers"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "Which company is NVIDIA's primary chip manufacturing partner?",
+                                            options: ["Intel", "Samsung", "TSMC", "GlobalFoundries"],
+                                            answer: 2
+                                        }
+                                    ]
                                 }
                             }
 
@@ -964,10 +1296,312 @@
                     {
                         id: 2, title: "3. Conclusion", icon: "fa-flag-checkered", color: "green",
                         subsections: [
-                            { id: "faq", title: "Frequently Asked QA", icon: "fa-question-circle", content: { highlights: ["Common questions about our analysis answered", "Clarifications on key concepts", "Additional resources for deeper learning"], themes: [{ title: "About This Project", subThemes: [{ title: "Q: Why interactive CV?", content: "[A: We wanted to demonstrate our analytical and technical skills in an engaging format...]" }, { title: "Q: How long did this take?", content: "[A: Timeline and effort invested...]" }, { title: "Q: What tools did you use?", content: "[A: React, Tailwind, research tools...]" }] }, { title: "About NVIDIA", subThemes: [{ title: "Q: Why is NVIDIA stock so high?", content: "[A: AI demand, market position, growth trajectory...]" }, { title: "Q: What's NVIDIA's moat?", content: "[A: CUDA ecosystem, developer mindshare, hardware leadership...]" }] }], flashcards: [{ front: "Most Asked Question", back: "[Your answer...]" }], quiz: [{ q: "Did the FAQ help clarify your questions?" }] } },
-                            { id: "interactiveqa", title: "Interactive Q&A", icon: "fa-comments", content: { highlights: ["Test your understanding of our analysis", "Engage with the material through questions", "Track your learning progress"], themes: [{ title: "Knowledge Check", subThemes: [{ title: "NVIDIA Basics", content: "[Quick facts and figures about NVIDIA...]" }, { title: "PM Role", content: "[Key aspects of the PM position...]" }, { title: "Strategy Insights", content: "[Core strategic insights from our analysis...]" }] }], flashcards: [{ front: "NVIDIA Founded", back: "1993 by Jensen Huang" }, { front: "Headquarters", back: "Santa Clara, California" }, { front: "CUDA Released", back: "2007" }], quiz: [{ q: "Did you engage with all the interactive elements?" }, { q: "Do you feel you understand our analysis?" }] } },
-                            { id: "glossary", title: "Glossary & Knowledge", icon: "fa-book", content: { highlights: ["Key terms and definitions", "Industry jargon explained", "Quick reference for technical concepts"], themes: [{ title: "Technical Terms", subThemes: [{ title: "GPU", content: "Graphics Processing Unit - specialized processor for parallel computing" }, { title: "CUDA", content: "Compute Unified Device Architecture - NVIDIA's parallel computing platform" }, { title: "Tensor Core", content: "Specialized hardware for matrix operations in deep learning" }] }, { title: "Business Terms", subThemes: [{ title: "TAM", content: "Total Addressable Market" }, { title: "Moat", content: "Competitive advantage that protects market position" }, { title: "Platform", content: "Foundation enabling ecosystem of products and services" }] }], flashcards: [], quiz: [] } },
-                            { id: "creation", title: "What We Created", icon: "fa-trophy", content: { highlights: ["Comprehensive business analysis of NVIDIA", "Interactive demonstration of PM capabilities", "Proof of our analytical and technical skills"], themes: [{ title: "Deliverables", subThemes: [{ title: "This Website", content: "[Content: What this interactive CV demonstrates - technical skills, design thinking, attention to detail...]" }, { title: "Business Analysis", content: "[Content: Key insights from our NVIDIA analysis...]" }, { title: "Strategic Recommendations", content: "[Content: Our recommendations for NVIDIA PM role...]" }] }], flashcards: [], quiz: [{ q: "Was this interactive CV helpful?" }, { q: "Would you consider us for the PM role?" }], isConclusion: true } }
+                            {
+                                id: "faq",
+                                title: "Frequently Asked QA",
+                                icon: "fa-question-circle",
+                                content: {
+                                    highlights: [
+                                        "Answers to common questions about NVIDIA, the PM role, and our analysis",
+                                        "Clarifications on key strategic concepts covered in this interactive CV",
+                                        "Resources for deeper exploration of topics"
+                                    ],
+                                    fullArticle: [
+                                        {
+                                            title: "About NVIDIA",
+                                            paragraphs: [
+                                                "Q: Why did NVIDIA's market cap reach $5 trillion?",
+                                                "A: NVIDIA's unprecedented valuation is driven by its dominant position in AI computing. The company controls over 80% of the AI chip market, and its CUDA ecosystem has become the industry standard for AI development. The explosive growth in AI applications (ChatGPT, autonomous vehicles, etc.) directly benefits NVIDIA.",
+                                                "Q: What makes NVIDIA different from other chip companies?",
+                                                "A: NVIDIA is not just a hardware company—it's a platform company. It integrates GPU hardware, CUDA software, and a developer ecosystem into a mutually reinforcing system. This creates network effects: more developers use CUDA → stronger GPU demand → higher switching costs for competitors."
+                                            ]
+                                        },
+                                        {
+                                            title: "About the PM Role",
+                                            paragraphs: [
+                                                "Q: What does a PM do at NVIDIA?",
+                                                "A: Unlike traditional feature managers, PMs at NVIDIA function as ecosystem architects. They manage platform lifecycle, ensure backward compatibility, and orchestrate cross-industry interoperability. They must navigate co-opetition dynamics where partners like AWS and Google are simultaneously developing competing accelerators.",
+                                                "Q: What skills are essential for a PM at NVIDIA?",
+                                                "A: The AMC Framework applies: Awareness of substitute innovations (TPUs, AI ASICs), Motivation to maintain ecosystem dominance, and Capability to respond through software optimization and service expansion (Enterprise AI, Omniverse, DGX Cloud)."
+                                            ]
+                                        },
+                                        {
+                                            title: "About This Project",
+                                            paragraphs: [
+                                                "Q: Why create an interactive CV instead of a traditional resume?",
+                                                "A: We wanted to demonstrate our capabilities through action, not just words. This interactive CV showcases: strategic analysis skills, understanding of platform business models, technical implementation abilities, and user experience design thinking—all essential PM competencies.",
+                                                "Q: What technologies were used?",
+                                                "A: React for component-based UI, Tailwind CSS for styling, and vanilla JavaScript. The entire application is a single HTML file for easy deployment and demonstration."
+                                            ]
+                                        }
+                                    ],
+                                    themes: [
+                                        {
+                                            title: "About NVIDIA", subThemes: [
+                                                { title: "Q: Why $5 trillion valuation?", content: "AI computing dominance (80%+ market share), CUDA ecosystem lock-in, and explosive AI demand (ChatGPT era). Revenue grew from $60.9B (FY2024) to $130.5B (FY2025)." },
+                                                { title: "Q: What is NVIDIA's moat?", content: "CUDA ecosystem with 4+ million developers creates high switching costs. The platform integration of hardware + software + ecosystem is nearly impossible to replicate." },
+                                                { title: "Q: Key competitors?", content: "AMD (Radeon, MI series), Intel (Gaudi), Google (TPUs), AWS (Trainium/Inferentia). However, all face the CUDA ecosystem barrier." }
+                                            ]
+                                        },
+                                        {
+                                            title: "About PM at NVIDIA", subThemes: [
+                                                { title: "Q: PM's primary role?", content: "Ecosystem architect managing platform lifecycle, backward compatibility, and cross-industry interoperability—not just feature management." },
+                                                { title: "Q: Key challenges?", content: "Navigating co-opetition: major cloud partners (AWS, Google, Azure) are also developing competing accelerators. Must maintain compelling value propositions." },
+                                                { title: "Q: AMC Framework?", content: "Awareness (know substitutes), Motivation (drive dominance), Capability (technical-business skills to respond through optimization and expansion)." }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "NVIDIA's Core Moat", back: "CUDA ecosystem with 4+ million developers, creating insurmountable switching costs" },
+                                        { front: "PM Role at NVIDIA", back: "Ecosystem architect, not feature manager—managing platform lifecycle and cross-industry interoperability" },
+                                        { front: "Key Revenue Milestone", back: "FY2025 revenue: $130.5B (from $60.9B in FY2024), TTM reaching $187B" }
+                                    ],
+                                    quiz: [
+                                        { q: "According to the FAQ, what percentage of the AI chip market does NVIDIA control?", options: ["Over 50%", "Over 60%", "Over 70%", "Over 80%"], answer: 3 },
+                                        { q: "What role do PMs at NVIDIA function as, according to this page?", options: ["Feature managers", "Sales representatives", "Ecosystem architects", "Project managers"], answer: 2 },
+                                        { q: "What framework is mentioned for PM skills at NVIDIA?", options: ["SWOT Framework", "BCG Matrix", "AMC Framework", "Porter's Five Forces"], answer: 2 },
+                                        { q: "What technologies were used to build this Interactive CV?", options: ["Python and Django", "React and Tailwind CSS", "Vue and Bootstrap", "Angular and Material UI"], answer: 1 }
+                                    ]
+                                }
+                            },
+                            {
+                                id: "review",
+                                title: "Knowledge Review",
+                                icon: "fa-graduation-cap",
+                                content: {
+                                    highlights: [
+                                        "Comprehensive review of all key concepts from Introduction and Insights sections",
+                                        "Test your understanding with knowledge-based questions",
+                                        "Summary of strategic frameworks: PARTS, Porter's Five Forces, Blue Ocean"
+                                    ],
+                                    fullArticle: [
+                                        {
+                                            title: "NVIDIA Business Overview",
+                                            paragraphs: [
+                                                "• Founded: 1993 by Jensen Huang (FT 2025 Person of the Year)",
+                                                "• Market Cap: $5 trillion (Oct 2025) - first company to reach this milestone",
+                                                "• Revenue: FY2025 $130.5B (TTM $187B) vs FY2024 $60.9B",
+                                                "• AI Chip Market Share: Over 80%",
+                                                "• Four Business Segments: Data Centers, Gaming (GeForce), Professional Visualization (RTX), Automotive (DRIVE)"
+                                            ]
+                                        },
+                                        {
+                                            title: "Key Products & Technology",
+                                            paragraphs: [
+                                                "• CUDA: Compute Unified Device Architecture (2006) - 4+ million developers",
+                                                "• Blackwell (2024): 208B transistors, 25x efficiency vs Hopper",
+                                                "• Grace Hopper: GH200 Superchip - Arm CPU + Hopper GPU, 900 GB/s bandwidth",
+                                                "• H100/H200: Current AI data center workhorse (Hopper architecture)",
+                                                "• Omniverse: 3D design collaboration and digital twins platform"
+                                            ]
+                                        },
+                                        {
+                                            title: "Strategic Frameworks Applied",
+                                            paragraphs: [
+                                                "1. PARTS Framework: Players (AMD, Intel, hyperscalers), Added Values (80% AI share, CUDA), Rules (ecosystem lock-in), Tactics (software ecosystem, TSMC partnership), Scope (four markets)",
+                                                "2. Porter's Five Forces: Low entry threat (CUDA barrier), moderate supplier power, moderate-high buyer power (big tech developing own chips)",
+                                                "3. Blue Ocean Strategy: Creating new uncontested markets (autonomous vehicles, LLMs) instead of red ocean competition",
+                                                "4. Platform Lock-in: GPU + Software + Consulting → integrated ecosystem with high switching costs"
+                                            ]
+                                        }
+                                    ],
+                                    themes: [
+                                        {
+                                            title: "NVIDIA by Numbers", subThemes: [
+                                                { title: "Financial Milestones", content: "Market Cap: $5T (Oct 2025). Revenue: $130.5B FY2025, $187B TTM. Growth: 114% YoY." },
+                                                { title: "Market Position", content: "80%+ AI chip market share. 4+ million CUDA developers. First $5T company ever." },
+                                                { title: "Product Portfolio", content: "Blackwell (208B transistors), Grace Hopper (900 GB/s), H100/H200, GeForce RTX, DRIVE, Omniverse" }
+                                            ]
+                                        },
+                                        {
+                                            title: "Strategic Concepts", subThemes: [
+                                                { title: "PARTS Framework", content: "Players, Added Values, Rules, Tactics, Scope - comprehensive co-opetition analysis tool" },
+                                                { title: "Platform Lock-in", content: "CUDA ecosystem creates network effects: developers → GPU demand → switching costs" },
+                                                { title: "Blue Ocean Strategy", content: "Create new markets (AI, autonomous vehicles) rather than compete in existing 'red oceans'" }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "NVIDIA Founded", back: "1993 by Jensen Huang in Santa Clara, California" },
+                                        { front: "Market Cap Milestone", back: "$5 trillion in October 2025 - first company ever" },
+                                        { front: "CUDA Launch Year", back: "2006 - now with 4+ million developers" },
+                                        { front: "AI Chip Market Share", back: "Over 80% - dominant position in AI computing" },
+                                        { front: "Blackwell Specs", back: "208B transistors, 25x efficiency vs Hopper, launched 2024" },
+                                        { front: "PARTS Framework", back: "Players, Added Values, Rules, Tactics, Scope" }
+                                    ],
+                                    quiz: [
+                                        { q: "What are NVIDIA's four business segments mentioned in the review?", options: ["AI, Gaming, Cloud, IoT", "Data Centers, Gaming, Professional Visualization, Automotive", "GPU, CPU, Memory, Storage", "Hardware, Software, Services, Consulting"], answer: 1 },
+                                        { q: "According to the review, what year did NVIDIA launch CUDA?", options: ["2001", "2004", "2006", "2010"], answer: 2 },
+                                        { q: "What does the 'A' in PARTS Framework stand for?", options: ["Analysis", "Added Values", "Acquisition", "Assets"], answer: 1 },
+                                        { q: "What is Blue Ocean Strategy about, according to this page?", options: ["Competing aggressively on price", "Creating new uncontested markets", "Acquiring competitors", "Expanding globally"], answer: 1 }
+                                    ]
+                                }
+                            },
+                            {
+                                id: "glossary",
+                                title: "Glossary & Terms",
+                                icon: "fa-book",
+                                content: {
+                                    highlights: [
+                                        "Complete glossary of technical and business terms used in this analysis",
+                                        "Quick reference for NVIDIA products and technologies",
+                                        "Strategic framework definitions"
+                                    ],
+                                    fullArticle: [
+                                        {
+                                            title: "Technology Terms",
+                                            paragraphs: [
+                                                "• GPU (Graphics Processing Unit): Specialized processor optimized for parallel computing, originally for graphics but now essential for AI/ML",
+                                                "• CUDA (Compute Unified Device Architecture): NVIDIA's parallel computing platform and API, enabling GPU-accelerated computing",
+                                                "• Tensor Core: Specialized hardware units for matrix operations essential in deep learning training and inference",
+                                                "• Blackwell: NVIDIA's 2024 GPU architecture with 208B transistors, designed for generative AI era",
+                                                "• Grace Hopper: GH200 Superchip combining Arm Grace CPU with Hopper GPU, featuring 900 GB/s memory bandwidth",
+                                                "• Omniverse: NVIDIA's platform for 3D design collaboration, simulation, and digital twins"
+                                            ]
+                                        },
+                                        {
+                                            title: "Business & Strategy Terms",
+                                            paragraphs: [
+                                                "• Platform Company: Business model integrating hardware, software, and ecosystem into mutually reinforcing system",
+                                                "• Network Effects: Value increases as more users join (e.g., more CUDA developers → stronger GPU demand)",
+                                                "• Lock-in Effect: High switching costs that keep customers within an ecosystem",
+                                                "• Co-opetition: Simultaneous cooperation and competition with other companies (e.g., NVIDIA + cloud providers)",
+                                                "• Blue Ocean Strategy: Creating new uncontested market spaces rather than competing in existing 'red ocean' markets",
+                                                "• Moat: Sustainable competitive advantage that protects market position"
+                                            ]
+                                        },
+                                        {
+                                            title: "Strategic Frameworks",
+                                            paragraphs: [
+                                                "• PARTS Framework: Players, Added Values, Rules, Tactics, Scope - for analyzing co-opetition dynamics",
+                                                "• Porter's Five Forces: Entry barriers, supplier power, buyer power, substitutes, rivalry - for industry analysis",
+                                                "• AMC Framework: Awareness, Motivation, Capability - for competitive response analysis",
+                                                "• TAM (Total Addressable Market): The total revenue opportunity for a product or service"
+                                            ]
+                                        }
+                                    ],
+                                    themes: [
+                                        {
+                                            title: "NVIDIA Products", subThemes: [
+                                                { title: "CUDA", content: "Compute Unified Device Architecture - NVIDIA's parallel computing platform with 4+ million developers" },
+                                                { title: "Blackwell", content: "2024 GPU architecture: 208B transistors, 25x efficiency vs Hopper, B100/B200/GB200 lineup" },
+                                                { title: "Grace Hopper", content: "GH200 Superchip combining Arm CPU with Hopper GPU, 900 GB/s bandwidth" },
+                                                { title: "Omniverse", content: "Platform for 3D design collaboration, simulation, and digital twins" }
+                                            ]
+                                        },
+                                        {
+                                            title: "Strategic Terms", subThemes: [
+                                                { title: "Platform Lock-in", content: "High switching costs created by integrated ecosystem (hardware + software + services)" },
+                                                { title: "Co-opetition", content: "Simultaneous cooperation and competition - e.g., AWS is both customer and competitor" },
+                                                { title: "Blue Ocean", content: "Creating new uncontested markets instead of competing in existing 'red ocean' markets" },
+                                                { title: "PARTS Framework", content: "Players, Added Values, Rules, Tactics, Scope - co-opetition analysis tool" }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "GPU", back: "Graphics Processing Unit - specialized processor for parallel computing, essential for AI" },
+                                        { front: "CUDA", back: "Compute Unified Device Architecture - NVIDIA's parallel computing platform" },
+                                        { front: "Platform Lock-in", back: "High switching costs from integrated ecosystem of hardware + software + services" },
+                                        { front: "Co-opetition", back: "Simultaneous cooperation and competition with the same company" },
+                                        { front: "Blue Ocean Strategy", back: "Creating new uncontested markets rather than competing in existing ones" }
+                                    ],
+                                    quiz: [
+                                        { q: "According to the glossary, what are Tensor Cores specialized for?", options: ["Graphics rendering", "Matrix operations in deep learning", "Network communication", "Storage management"], answer: 1 },
+                                        { q: "What does 'Platform Lock-in' mean according to this page?", options: ["Low prices that attract customers", "High switching costs from integrated ecosystem", "Exclusive partnerships", "Patent protection"], answer: 1 },
+                                        { q: "What does the Grace Hopper Superchip combine?", options: ["Two GPUs", "Arm Grace CPU with Hopper GPU", "Intel CPU with NVIDIA GPU", "AMD CPU with NVIDIA GPU"], answer: 1 },
+                                        { q: "What is 'Moat' in business terms?", options: ["A type of hardware", "Sustainable competitive advantage", "Marketing strategy", "Financial metric"], answer: 1 }
+                                    ]
+                                }
+                            },
+                            {
+                                id: "creation",
+                                title: "What We Created",
+                                icon: "fa-trophy",
+                                content: {
+                                    highlights: [
+                                        "Comprehensive NVIDIA business analysis from multiple strategic frameworks",
+                                        "Interactive demonstration of PM core competencies",
+                                        "Proof of our strategic thinking, technical skills, and attention to detail"
+                                    ],
+                                    fullArticle: [
+                                        {
+                                            title: "This Interactive CV",
+                                            paragraphs: [
+                                                "We created this interactive CV to demonstrate our capabilities through action, not just words. Every element showcases PM-relevant skills:",
+                                                "• Strategic Analysis: Applied PARTS Framework, Porter's Five Forces, Blue Ocean Strategy to NVIDIA",
+                                                "• Technical Implementation: Built with React, Tailwind CSS, responsive design",
+                                                "• User Experience Design: Flashcards, quizzes, theme explorers, and navigation for engagement",
+                                                "• Content Creation: Synthesized complex business information into digestible formats",
+                                                "• Attention to Detail: Consistent styling, smooth animations, mobile responsiveness"
+                                            ]
+                                        },
+                                        {
+                                            title: "Key Insights Delivered",
+                                            paragraphs: [
+                                                "Through our analysis, we uncovered critical insights about NVIDIA:",
+                                                "• Platform Strategy: NVIDIA is not a chip company—it's a platform company integrating hardware, software, and ecosystem",
+                                                "• Lock-in Mechanism: CUDA with 4+ million developers creates insurmountable switching costs",
+                                                "• Co-opetition Dynamics: Cloud providers are simultaneously partners and competitors developing own accelerators",
+                                                "• PM Role: At NVIDIA, PMs function as ecosystem architects managing platform lifecycle and cross-industry interoperability"
+                                            ]
+                                        },
+                                        {
+                                            title: "Why We Would Excel at NVIDIA",
+                                            paragraphs: [
+                                                "This project demonstrates the exact skills needed for PM role at NVIDIA:",
+                                                "1. Strategic Thinking: We analyzed NVIDIA from multiple frameworks (PARTS, Porter's, Blue Ocean)",
+                                                "2. Technical Capability: We built a complete interactive web application",
+                                                "3. Communication Skills: We synthesized complex information into engaging, digestible content",
+                                                "4. User Empathy: We designed interactive elements (quizzes, flashcards) to enhance learning",
+                                                "5. Platform Thinking: We understand NVIDIA's integrated approach and can apply it to product decisions"
+                                            ]
+                                        }
+                                    ],
+                                    themes: [
+                                        {
+                                            title: "Project Deliverables", subThemes: [
+                                                { title: "Interactive Website", content: "React-based single-page application with responsive design, dark theme, and engaging UI components" },
+                                                { title: "Business Analysis", content: "Comprehensive NVIDIA analysis using PARTS, Porter's Five Forces, and Blue Ocean frameworks" },
+                                                { title: "Learning Tools", content: "Flashcard carousel, knowledge quizzes, theme explorers for interactive engagement" }
+                                            ]
+                                        },
+                                        {
+                                            title: "PM Competencies Demonstrated", subThemes: [
+                                                { title: "Strategic Analysis", content: "Applied multiple strategic frameworks to understand NVIDIA's competitive position" },
+                                                { title: "Technical Skills", content: "Built complete web application demonstrating implementation capability" },
+                                                { title: "Communication", content: "Synthesized complex business concepts into clear, engaging content" },
+                                                { title: "User Experience", content: "Designed interactive elements to enhance understanding and engagement" }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "Our Key Insight", back: "NVIDIA is a platform company, not a chip company—integrating hardware, software, and ecosystem" },
+                                        { front: "PM Role Understanding", back: "At NVIDIA, PMs are ecosystem architects managing platform lifecycle and cross-industry interoperability" },
+                                        { front: "What This CV Demonstrates", back: "Strategic analysis, technical implementation, UX design, and communication skills" }
+                                    ],
+                                    quiz: [
+                                        { q: "According to this page, what is NVIDIA described as?", options: ["A chip company", "A hardware company", "A platform company integrating hardware, software, and ecosystem", "A software company"], answer: 2 },
+                                        { q: "What strategic frameworks were applied to analyze NVIDIA in this project?", options: ["SWOT only", "BCG Matrix only", "PARTS, Porter's Five Forces, Blue Ocean", "Lean Canvas only"], answer: 2 },
+                                        { q: "How many key PM competencies are listed that this project demonstrates?", options: ["3", "4", "5", "6"], answer: 2 },
+                                        { q: "What is the key insight about NVIDIA's lock-in mechanism?", options: ["Low prices", "CUDA with 4+ million developers creates insurmountable switching costs", "Exclusive partnerships", "Government contracts"], answer: 1 }
+                                    ],
+                                    isConclusion: true
+                                }
+                            },
+                            {
+                                id: "feedback",
+                                title: "Feedback",
+                                icon: "fa-comment-dots",
+                                content: {
+                                    highlights: [],
+                                    fullArticle: [],
+                                    themes: [],
+                                    flashcards: [],
+                                    quiz: [],
+                                    googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfrX-4LujPmFM1Al-2jXl-aR95s1-tmdoAyrZ08dtys4x8Z-Q/viewform?embedded=true",
+                                    isFeedback: true
+                                }
+                            }
                         ]
                     }
                 ],
@@ -1036,102 +1670,230 @@
         };
 
 
-        const SelfCheck = ({ questions, answers, onAnswer, labels }) => {
+        // 知識點測驗組件 - 選擇題格式
+        const QuizCard = ({ questions, answers, onAnswer, label }) => {
+            const [currentIndex, setCurrentIndex] = useState(0);
+            const [showResult, setShowResult] = useState(false);
+
+            if (!questions?.length) return null;
+
+            // 計算正確答題數
+            const correctCount = Object.entries(answers).filter(([idx, ans]) => {
+                const q = questions[parseInt(idx)];
+                return q && ans === q.answer;
+            }).length;
             const answeredCount = Object.keys(answers).length;
-            const progress = questions.length > 0 ? (answeredCount / questions.length) * 100 : 0;
+            const progress = (answeredCount / questions.length) * 100;
+            const q = questions[currentIndex];
+            const selectedAnswer = answers[currentIndex];
+            const isAnswered = selectedAnswer !== undefined;
+            const isCorrect = isAnswered && selectedAnswer === q.answer;
+
+            const goNext = () => {
+                setShowResult(false);
+                setCurrentIndex((prev) => (prev + 1) % questions.length);
+            };
+            const goPrev = () => {
+                setShowResult(false);
+                setCurrentIndex((prev) => (prev - 1 + questions.length) % questions.length);
+            };
+
+            const handleAnswer = (optionIndex) => {
+                if (isAnswered) return; // 已經答過不能改
+                onAnswer(currentIndex, optionIndex);
+                setShowResult(true);
+            };
 
             return (
-                <div className="info-card">
+                <div className="bg-gray-800/80 rounded-xl p-4 border border-gray-700/50">
                     {/* 標題和進度 */}
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center justify-between mb-3">
                         <div className="flex items-center">
-                            <div className="w-10 h-10 rounded-xl bg-nvidia flex items-center justify-center mr-3 glow-nvidia-sm">
-                                <i className="fas fa-clipboard-check text-nvidia-black"></i>
+                            <div className="w-7 h-7 rounded-lg bg-nvidia/20 flex items-center justify-center mr-2">
+                                <i className="fas fa-brain text-nvidia text-sm"></i>
                             </div>
-                            <div>
-                                <h3 className="font-bold gradient-text">Self Assessment</h3>
-                                <p className="text-xs text-gray-500">{answeredCount} of {questions.length} answered</p>
-                            </div>
+                            <span className="font-bold text-sm gradient-text">{label}</span>
                         </div>
-                        <div className="text-right">
-                            <span className="stat-value text-xl">{Math.round(progress)}%</span>
+                        <div className="flex items-center gap-2">
+                            <span className="text-xs text-green-400">{correctCount}✓</span>
+                            <span className="text-xs text-gray-500">{answeredCount}/{questions.length}</span>
                         </div>
                     </div>
 
                     {/* 進度條 */}
-                    <div className="progress-bar mb-5">
-                        <div className="progress-fill" style={{ width: `${progress}%` }}></div>
+                    <div className="h-1 bg-gray-700 rounded-full mb-4 overflow-hidden">
+                        <div className="h-full bg-nvidia transition-all duration-300 rounded-full" style={{ width: `${progress}%` }}></div>
                     </div>
 
-                    {/* 題目 */}
-                    <div className="space-y-4">
-                        {questions.map((q, i) => {
-                            const isAnswered = answers[i] !== undefined;
-                            return (
-                                <div key={i} className={`p-4 rounded-xl border transition-all ${isAnswered ? 'bg-gray-900/30 border-nvidia/30' : 'bg-gray-900/50 border-gray-700/30 hover:border-gray-600/50'}`}>
-                                    <div className="flex items-start mb-3">
-                                        <div className={`w-7 h-7 rounded-lg flex items-center justify-center mr-3 flex-shrink-0 ${isAnswered ? 'bg-nvidia' : 'bg-nvidia/20'}`}>
-                                            {isAnswered ?
-                                                <i className="fas fa-check text-nvidia-black text-xs"></i> :
-                                                <span className="text-nvidia font-bold text-xs">{i + 1}</span>
-                                            }
-                                        </div>
-                                        <p className={`font-medium text-sm leading-relaxed ${isAnswered ? 'text-gray-400' : 'text-gray-200'}`}>{q.q}</p>
-                                    </div>
-                                    <div className="flex gap-2 ml-10">
-                                        {[
-                                            { v: 1, l: labels.yes, c: 'bg-green-900/40 text-green-400 border-green-700/50 hover:bg-green-900/60', icon: 'fa-thumbs-up', activeC: 'bg-green-600 text-white border-green-500' },
-                                            { v: 0, l: labels.unsure, c: 'bg-yellow-900/30 text-yellow-400 border-yellow-700/50 hover:bg-yellow-900/50', icon: 'fa-meh', activeC: 'bg-yellow-600 text-white border-yellow-500' },
-                                            { v: -1, l: labels.no, c: 'bg-red-900/40 text-red-400 border-red-700/50 hover:bg-red-900/60', icon: 'fa-thumbs-down', activeC: 'bg-red-600 text-white border-red-500' }
-                                        ].map(o => (
-                                            <button
-                                                key={o.v}
-                                                onClick={() => onAnswer(i, o.v)}
-                                                className={`flex-1 py-2.5 rounded-lg text-xs font-bold border transition-all ${answers[i] === o.v ? o.activeC + ' glow-nvidia-sm scale-105' : o.c}`}
-                                            >
-                                                <i className={`fas ${o.icon} mr-1.5`}></i>{o.l}
-                                            </button>
-                                        ))}
-                                    </div>
-                                </div>
-                            );
-                        })}
+                    {/* 題目卡片 */}
+                    <div className="bg-gray-900/80 rounded-lg p-4 border border-gray-700/30 mb-3">
+                        {/* 題目 */}
+                        <div className="flex items-start mb-4">
+                            <div className={`w-6 h-6 rounded-md flex items-center justify-center mr-3 flex-shrink-0 ${isAnswered ? (isCorrect ? 'bg-green-500' : 'bg-red-500') : 'bg-nvidia/20'
+                                }`}>
+                                {isAnswered ? (
+                                    isCorrect ? <i className="fas fa-check text-white text-xs"></i> : <i className="fas fa-times text-white text-xs"></i>
+                                ) : (
+                                    <span className="text-nvidia font-bold text-xs">Q{currentIndex + 1}</span>
+                                )}
+                            </div>
+                            <p className="text-sm leading-relaxed text-gray-200 font-medium">{q.q}</p>
+                        </div>
+
+                        {/* 選項 */}
+                        <div className="space-y-2">
+                            {q.options?.map((option, optIdx) => {
+                                const isSelected = selectedAnswer === optIdx;
+                                const isCorrectOption = optIdx === q.answer;
+                                let optionClass = 'bg-gray-800/50 border-gray-700/50 hover:border-nvidia/50 text-gray-300';
+
+                                if (isAnswered) {
+                                    if (isCorrectOption) {
+                                        optionClass = 'bg-green-900/40 border-green-500 text-green-300';
+                                    } else if (isSelected && !isCorrectOption) {
+                                        optionClass = 'bg-red-900/40 border-red-500 text-red-300';
+                                    } else {
+                                        optionClass = 'bg-gray-800/30 border-gray-700/30 text-gray-500';
+                                    }
+                                }
+
+                                return (
+                                    <button
+                                        key={optIdx}
+                                        onClick={() => handleAnswer(optIdx)}
+                                        disabled={isAnswered}
+                                        className={`w-full text-left p-3 rounded-lg border transition-all flex items-center ${optionClass} ${!isAnswered ? 'cursor-pointer' : 'cursor-default'}`}
+                                    >
+                                        <span className={`w-5 h-5 rounded-full border flex items-center justify-center mr-3 text-xs font-bold flex-shrink-0 ${isAnswered && isCorrectOption ? 'border-green-500 bg-green-500 text-white' :
+                                            isAnswered && isSelected ? 'border-red-500 bg-red-500 text-white' :
+                                                'border-current'
+                                            }`}>
+                                            {String.fromCharCode(65 + optIdx)}
+                                        </span>
+                                        <span className="text-xs">{option}</span>
+                                        {isAnswered && isCorrectOption && <i className="fas fa-check ml-auto text-green-400"></i>}
+                                        {isAnswered && isSelected && !isCorrectOption && <i className="fas fa-times ml-auto text-red-400"></i>}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        {/* 答題結果反饋 */}
+                        {isAnswered && (
+                            <div className={`mt-3 p-2 rounded-lg text-xs ${isCorrect ? 'bg-green-900/30 text-green-400' : 'bg-red-900/30 text-red-400'}`}>
+                                <i className={`fas ${isCorrect ? 'fa-check-circle' : 'fa-info-circle'} mr-2`}></i>
+                                {isCorrect ? 'Correct! Great job!' : `The correct answer is: ${String.fromCharCode(65 + q.answer)}`}
+                            </div>
+                        )}
+                    </div>
+
+                    {/* 導航按鈕 */}
+                    <div className="flex items-center justify-between">
+                        <button onClick={goPrev} className="w-8 h-8 rounded-lg bg-gray-700/50 hover:bg-gray-600/50 flex items-center justify-center transition">
+                            <i className="fas fa-chevron-left text-gray-400 text-xs"></i>
+                        </button>
+                        <div className="flex gap-1">
+                            {questions.map((_, i) => {
+                                const qAnswered = answers[i] !== undefined;
+                                const qCorrect = qAnswered && answers[i] === questions[i].answer;
+                                return (
+                                    <div
+                                        key={i}
+                                        className={`w-2 h-2 rounded-full transition-all cursor-pointer ${i === currentIndex ? 'bg-nvidia w-4' :
+                                            qCorrect ? 'bg-green-500' :
+                                                qAnswered ? 'bg-red-500' : 'bg-gray-600'
+                                            }`}
+                                        onClick={() => { setShowResult(false); setCurrentIndex(i); }}
+                                    ></div>
+                                );
+                            })}
+                        </div>
+                        <button onClick={goNext} className="w-8 h-8 rounded-lg bg-gray-700/50 hover:bg-gray-600/50 flex items-center justify-center transition">
+                            <i className="fas fa-chevron-right text-gray-400 text-xs"></i>
+                        </button>
                     </div>
 
                     {/* 完成提示 */}
                     {progress === 100 && (
-                        <div className="mt-4 p-3 bg-nvidia/20 rounded-lg border border-nvidia/30 flex items-center justify-center">
-                            <i className="fas fa-trophy text-nvidia mr-2"></i>
-                            <span className="text-sm font-medium text-nvidia">All questions completed!</span>
+                        <div className={`mt-3 py-2 rounded-lg flex items-center justify-center ${correctCount === questions.length ? 'bg-green-900/30' : 'bg-nvidia/20'
+                            }`}>
+                            <i className={`fas ${correctCount === questions.length ? 'fa-trophy' : 'fa-flag-checkered'} mr-2 text-sm ${correctCount === questions.length ? 'text-green-400' : 'text-nvidia'
+                                }`}></i>
+                            <span className={`text-xs font-medium ${correctCount === questions.length ? 'text-green-400' : 'text-nvidia'}`}>
+                                Score: {correctCount}/{questions.length} ({Math.round(correctCount / questions.length * 100)}%)
+                            </span>
                         </div>
                     )}
                 </div>
             );
         };
 
-        const Flashcard = ({ front, back }) => {
+        // Flashcard 輪播元件 - 一次只顯示一張
+        const FlashcardCarousel = ({ flashcards, label }) => {
+            const [currentIndex, setCurrentIndex] = useState(0);
+            const [flipped, setFlipped] = useState(false);
 
-            const [f, setF] = useState(false);
+            if (!flashcards?.length) return null;
+
+            const goNext = () => {
+                setFlipped(false);
+                setCurrentIndex((prev) => (prev + 1) % flashcards.length);
+            };
+            const goPrev = () => {
+                setFlipped(false);
+                setCurrentIndex((prev) => (prev - 1 + flashcards.length) % flashcards.length);
+            };
+
+            const card = flashcards[currentIndex];
+
             return (
-                <div className="w-full h-40 cursor-pointer perspective-1000" onClick={() => setF(!f)}>
-                    <div className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${f ? 'rotate-y-180' : ''}`}>
-                        {/* 正面 */}
-                        <div className="absolute w-full h-full backface-hidden info-card tech-corners flex flex-col items-center justify-center p-4 overflow-hidden">
-                            <div className="absolute top-0 left-0 w-full h-full scan-line pointer-events-none"></div>
-                            <div className="w-10 h-10 rounded-full bg-nvidia/20 flex items-center justify-center mb-3 float-animation">
-                                <i className="fas fa-lightbulb text-nvidia text-lg"></i>
+                <div className="bg-gray-800/80 rounded-xl p-4 border border-gray-700/50">
+                    {/* 標題和進度 */}
+                    <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center">
+                            <div className="w-7 h-7 rounded-lg bg-nvidia/20 flex items-center justify-center mr-2">
+                                <i className="fas fa-clone text-nvidia text-sm"></i>
                             </div>
-                            <h3 className="text-sm font-bold gradient-text text-center leading-tight">{front}</h3>
-                            <div className="mt-3 flex items-center text-[10px] text-gray-500 bg-gray-800/50 px-3 py-1 rounded-full">
-                                <i className="fas fa-hand-pointer mr-1.5 animate-pulse"></i>
-                                <span>Tap to reveal</span>
+                            <span className="font-bold text-sm gradient-text">{label}</span>
+                        </div>
+                        <span className="text-xs text-gray-500">{currentIndex + 1} / {flashcards.length}</span>
+                    </div>
+
+                    {/* 卡片區域 */}
+                    <div className="relative h-36 cursor-pointer perspective-1000" onClick={() => setFlipped(!flipped)}>
+                        <div className={`relative w-full h-full transition-transform duration-500 transform-style-3d ${flipped ? 'rotate-y-180' : ''}`}>
+                            {/* 正面 */}
+                            <div className="absolute w-full h-full backface-hidden bg-gray-900/80 rounded-lg border border-gray-700/50 flex flex-col items-center justify-center p-4">
+                                <div className="w-8 h-8 rounded-full bg-nvidia/20 flex items-center justify-center mb-2">
+                                    <i className="fas fa-lightbulb text-nvidia"></i>
+                                </div>
+                                <h3 className="text-sm font-bold gradient-text text-center leading-tight">{card.front}</h3>
+                                <div className="mt-2 text-[10px] text-gray-500">
+                                    <i className="fas fa-hand-pointer mr-1 animate-pulse"></i>Tap to flip
+                                </div>
+                            </div>
+                            {/* 背面 */}
+                            <div className="absolute w-full h-full backface-hidden bg-gradient-to-br from-nvidia via-nvidia-dark to-nvidia text-nvidia-black rounded-lg flex flex-col items-center justify-center p-4 rotate-y-180">
+                                <i className="fas fa-check-circle text-xl mb-2 opacity-80"></i>
+                                <p className="text-xs font-medium text-center leading-relaxed">{card.back}</p>
                             </div>
                         </div>
-                        {/* 背面 */}
-                        <div className="absolute w-full h-full backface-hidden bg-gradient-to-br from-nvidia via-nvidia-dark to-nvidia text-nvidia-black rounded-xl flex flex-col items-center justify-center p-4 rotate-y-180 glow-nvidia">
-                            <i className="fas fa-check-circle text-2xl mb-2 opacity-80"></i>
-                            <p className="text-sm font-medium text-center leading-relaxed">{back}</p>
+                    </div>
+
+                    {/* 導航按鈕 */}
+                    <div className="flex items-center justify-between mt-3">
+                        <button onClick={(e) => { e.stopPropagation(); goPrev(); }} className="w-8 h-8 rounded-lg bg-gray-700/50 hover:bg-gray-600/50 flex items-center justify-center transition">
+                            <i className="fas fa-chevron-left text-gray-400 text-xs"></i>
+                        </button>
+                        {/* 進度點 */}
+                        <div className="flex gap-1">
+                            {flashcards.map((_, i) => (
+                                <div key={i} className={`w-2 h-2 rounded-full transition-all ${i === currentIndex ? 'bg-nvidia w-4' : 'bg-gray-600'}`}></div>
+                            ))}
                         </div>
+                        <button onClick={(e) => { e.stopPropagation(); goNext(); }} className="w-8 h-8 rounded-lg bg-gray-700/50 hover:bg-gray-600/50 flex items-center justify-center transition">
+                            <i className="fas fa-chevron-right text-gray-400 text-xs"></i>
+                        </button>
                     </div>
                 </div>
             );
@@ -1245,114 +2007,184 @@
         ) : null;
 
 
-        const SubsectionContent = ({ sub, scores, onQuiz, labels }) => {
+        // PM 工作連結專區組件 - 使用卡片式可折疊布局
+        const JobConnectionSection = ({ jobConnection }) => {
+            const [expanded, setExpanded] = useState(true);
+            if (!jobConnection) return null;
+
+            return (
+                <div className="info-card mt-4">
+                    {/* 標題區 */}
+                    <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center">
+                            <div className="w-10 h-10 rounded-xl bg-nvidia flex items-center justify-center mr-3 glow-nvidia-sm">
+                                <i className="fas fa-briefcase text-nvidia-black"></i>
+                            </div>
+                            <div>
+                                <h3 className="font-bold gradient-text">{jobConnection.title}</h3>
+                                <p className="text-xs text-gray-500">{jobConnection.subtitle}</p>
+                            </div>
+                        </div>
+                        <button
+                            onClick={() => setExpanded(!expanded)}
+                            className="w-8 h-8 rounded-lg bg-gray-700/50 hover:bg-gray-600/50 flex items-center justify-center transition"
+                        >
+                            <i className={`fas ${expanded ? 'fa-chevron-up' : 'fa-chevron-down'} text-gray-400 text-xs`}></i>
+                        </button>
+                    </div>
+
+                    {expanded && (
+                        <>
+                            {/* 連結說明 */}
+                            <div className="bg-gray-900/60 rounded-xl p-4 mb-4 border border-gray-700/50">
+                                <div className="flex items-start">
+                                    <div className="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i className="fas fa-link text-blue-400 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-blue-400 text-sm mb-1">How This Connects</h4>
+                                        <p className="text-xs text-gray-300 leading-relaxed">{jobConnection.connectionExplanation}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* 重點列表 - 使用條列式布局 */}
+                            {jobConnection.keyPoints && (
+                                <div className="space-y-2 mb-4">
+                                    {jobConnection.keyPoints.map((point, i) => (
+                                        <div key={i} className="flex items-start p-3 bg-gray-800/50 rounded-lg border-l-2 border-nvidia hover:bg-gray-800/70 transition-all">
+                                            <div className="w-6 h-6 rounded-md bg-nvidia flex items-center justify-center mr-3 flex-shrink-0">
+                                                <i className={`fas ${point.icon || 'fa-check'} text-nvidia-black text-[10px]`}></i>
+                                            </div>
+                                            <div>
+                                                <h5 className="font-bold text-nvidia text-xs mb-0.5">{point.title}</h5>
+                                                <p className="text-[11px] text-gray-400 leading-relaxed">{point.description}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+
+                            {/* CTA 按鈕 */}
+                            {jobConnection.jobLink && (
+                                <a
+                                    href={jobConnection.jobLink}
+                                    target="_blank"
+                                    className="flex items-center justify-center gap-2 w-full py-3 bg-nvidia text-nvidia-black rounded-lg font-bold text-sm hover:bg-nvidia-light transition-all btn-pulse glow-nvidia-sm"
+                                >
+                                    <i className="fas fa-external-link-alt text-xs"></i>
+                                    <span>View This PM Job Posting</span>
+                                    <i className="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            )}
+                        </>
+                    )}
+                </div>
+            );
+        };
+
+
+        const SubsectionContent = ({ sub, section, scores, onQuiz, labels }) => {
             const c = sub.content;
             const [expandedSections, setExpandedSections] = useState({});
             const toggleSection = (idx) => setExpandedSections(p => ({ ...p, [idx]: !p[idx] }));
 
-            return (<div className="animate-fade-in space-y-6">
-                {/* Highlights - 使用信息卡片樣式 */}
-                {c.highlights?.length > 0 && (
-                    <div className="info-card pattern-dots">
-                        <div className="flex items-center mb-4">
-                            <div className="w-10 h-10 rounded-xl bg-nvidia flex items-center justify-center mr-3 glow-nvidia-sm float-animation">
-                                <i className="fas fa-star text-nvidia-black"></i>
+            return (<div className="animate-fade-in">
+                {/* 雙欄主要佈局 */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    {/* 左欄：Header + Key Highlights + Deep Dive Analysis */}
+                    <div className="lg:col-span-7 space-y-6">
+                        {/* Page Header - 整合進左側欄 */}
+                        <header className="mb-2">
+                            <div className="flex items-center gap-2 text-xs text-gray-500 mb-3">
+                                <span className="px-2 py-1 bg-gray-800/50 rounded">{section.title}</span>
+                                <i className="fas fa-chevron-right text-[8px] text-nvidia"></i>
+                                <span className="text-nvidia font-medium">{sub.title}</span>
                             </div>
-                            <div>
-                                <h3 className="font-bold gradient-text">Key Highlights</h3>
-                                <p className="text-xs text-gray-500">{c.highlights.length} important points</p>
-                            </div>
-                        </div>
-                        <div className="space-y-3">
-                            {c.highlights.map((h, i) => (
-                                <div key={i} className="flex items-start p-3 bg-gray-900/50 rounded-lg border border-gray-700/30 paragraph-enter hover:border-nvidia/30 transition-all" style={{ animationDelay: `${i * 100}ms` }}>
-                                    <div className="w-6 h-6 rounded-lg bg-nvidia/20 flex items-center justify-center mr-3 flex-shrink-0">
-                                        <span className="text-nvidia font-bold text-xs">{i + 1}</span>
-                                    </div>
-                                    <p className="text-sm text-gray-300 leading-relaxed">{h}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                )}
-
-                {/* Full Article Sections - 全新閱讀體驗 */}
-                {c.fullArticle?.length > 0 && (
-                    <div className="info-card">
-                        {/* 標題區域 */}
-                        <div className="flex items-center justify-between mb-6">
                             <div className="flex items-center">
-                                <div className="w-12 h-12 rounded-xl bg-nvidia flex items-center justify-center mr-4 glow-nvidia-sm">
-                                    <i className="fas fa-book-reader text-nvidia-black text-xl"></i>
+                                <div className="w-10 h-10 rounded-xl bg-nvidia text-nvidia-black flex items-center justify-center mr-4 glow-nvidia-sm">
+                                    <i className={`fas ${sub.icon} text-lg`}></i>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold gradient-text">Deep Dive Analysis</h3>
-                                    <p className="text-xs text-gray-500 mt-0.5">
-                                        <i className="fas fa-layer-group mr-1"></i>
-                                        {c.fullArticle.length} sections to explore
-                                    </p>
+                                    <h2 className="text-2xl md:text-3xl font-bold gradient-text">{sub.title}</h2>
                                 </div>
                             </div>
-                            {/* 閱讀進度指示條 */}
-                            <div className="hidden md:flex items-center gap-1">
-                                {c.fullArticle.map((_, idx) => (
-                                    <div
-                                        key={idx}
-                                        className={`w-8 h-1.5 rounded-full transition-all ${expandedSections[idx] ? 'bg-nvidia' : 'bg-gray-700'}`}
-                                    ></div>
-                                ))}
-                            </div>
-                        </div>
+                            <div className="h-1 w-20 bg-gradient-to-r from-nvidia to-nvidia-dark mt-4 rounded-full"></div>
+                        </header>
 
-                        {/* 時間軸容器 */}
-                        <div className="relative">
-                            {/* 時間軸線 */}
-                            <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-nvidia via-nvidia/30 to-transparent hidden md:block"></div>
-
-                            <div className="space-y-4">
-                                {c.fullArticle.map((section, idx) => (
-                                    <div key={idx} className="relative">
-                                        {/* 時間軸節點 */}
-                                        <div className={`absolute left-3 top-5 w-5 h-5 rounded-full border-2 transition-all hidden md:flex items-center justify-center z-10 ${expandedSections[idx] ? 'bg-nvidia border-nvidia' : 'bg-gray-800 border-gray-600'}`}>
-                                            {expandedSections[idx] && <i className="fas fa-check text-nvidia-black text-[8px]"></i>}
+                        {/* Highlights - 使用信息卡片樣式 */}
+                        {c.highlights?.length > 0 && (
+                            <div className="info-card pattern-dots">
+                                <div className="flex items-center mb-4">
+                                    <div className="w-10 h-10 rounded-xl bg-nvidia flex items-center justify-center mr-3 glow-nvidia-sm float-animation">
+                                        <i className="fas fa-star text-nvidia-black"></i>
+                                    </div>
+                                    <div>
+                                        <h3 className="font-bold gradient-text">Key Highlights</h3>
+                                        <p className="text-xs text-gray-500">{c.highlights.length} important points</p>
+                                    </div>
+                                </div>
+                                <div className="space-y-2">
+                                    {c.highlights.map((h, i) => (
+                                        <div key={i} className="flex items-start p-2 bg-gray-900/50 rounded-lg border border-gray-700/30 paragraph-enter hover:border-nvidia/30 transition-all" style={{ animationDelay: `${i * 100}ms` }}>
+                                            <div className="w-5 h-5 rounded-md bg-nvidia/20 flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
+                                                <span className="text-nvidia font-bold text-[10px]">{i + 1}</span>
+                                            </div>
+                                            <p className="text-sm text-gray-300 leading-relaxed">{h}</p>
                                         </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
 
-                                        {/* 文章卡片 */}
-                                        <div className={`md:ml-12 rounded-xl overflow-hidden transition-all ${expandedSections[idx] ? 'bg-gray-900/80 border-2 border-nvidia/50 glow-nvidia-sm' : 'bg-gray-800/60 border border-gray-700/50 hover:border-gray-600'}`}>
+                        {/* Full Article Sections - Deep Dive */}
+                        {c.fullArticle?.length > 0 && (
+                            <div className="info-card">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="flex items-center">
+                                        <div className="w-10 h-10 rounded-xl bg-nvidia flex items-center justify-center mr-3 glow-nvidia-sm">
+                                            <i className="fas fa-book-reader text-nvidia-black"></i>
+                                        </div>
+                                        <div>
+                                            <h3 className="font-bold gradient-text">Deep Dive Analysis</h3>
+                                            <p className="text-xs text-gray-500">{c.fullArticle.length} sections</p>
+                                        </div>
+                                    </div>
+                                    <div className="hidden md:flex items-center gap-1">
+                                        {c.fullArticle.map((_, idx) => (
+                                            <div key={idx} className={`w-6 h-1 rounded-full transition-all ${expandedSections[idx] ? 'bg-nvidia' : 'bg-gray-700'}`}></div>
+                                        ))}
+                                    </div>
+                                </div>
 
-                                            <button onClick={() => toggleSection(idx)} className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-700/30 transition-all">
-                                                <h3 className="font-bold text-nvidia flex items-center">
-                                                    <div className="w-8 h-8 rounded-lg bg-nvidia/20 flex items-center justify-center mr-3">
-                                                        <i className="fas fa-bookmark text-sm"></i>
+                                <div className="space-y-2">
+                                    {c.fullArticle.map((section, idx) => (
+                                        <div key={idx} className={`rounded-lg overflow-hidden transition-all ${expandedSections[idx] ? 'bg-gray-900/80 border border-nvidia/50' : 'bg-gray-800/60 border border-gray-700/50 hover:border-gray-600'}`}>
+                                            <button onClick={() => toggleSection(idx)} className="w-full flex items-center justify-between p-3 text-left hover:bg-gray-700/30 transition-all">
+                                                <h3 className="font-semibold text-nvidia flex items-center text-sm">
+                                                    <div className="w-6 h-6 rounded-md bg-nvidia/20 flex items-center justify-center mr-2">
+                                                        <i className="fas fa-bookmark text-xs"></i>
                                                     </div>
                                                     {section.title}
                                                 </h3>
-                                                <div className={`w-8 h-8 rounded-full bg-gray-700/50 flex items-center justify-center transition-transform ${expandedSections[idx] ? 'rotate-180' : ''}`}>
-                                                    <i className="fas fa-chevron-down text-gray-400 text-sm"></i>
+                                                <div className={`w-6 h-6 rounded-full bg-gray-700/50 flex items-center justify-center transition-transform ${expandedSections[idx] ? 'rotate-180' : ''}`}>
+                                                    <i className="fas fa-chevron-down text-gray-400 text-xs"></i>
                                                 </div>
                                             </button>
                                             {expandedSections[idx] && (
-                                                <div className="px-5 md:px-6 pb-6 animate-fade-in">
-                                                    {/* 分隔線 */}
-                                                    <div className="flex items-center mb-5">
-                                                        <div className="h-px flex-1 bg-gradient-to-r from-nvidia/50 to-transparent"></div>
-                                                        <span className="px-3 text-[10px] text-nvidia uppercase tracking-wider font-medium">Content</span>
-                                                        <div className="h-px flex-1 bg-gradient-to-l from-nvidia/50 to-transparent"></div>
-                                                    </div>
-                                                    <div className="space-y-4">
+                                                <div className="px-4 pb-4 animate-fade-in">
+                                                    <div className="space-y-3">
                                                         {section.paragraphs.map((p, pi) => {
-                                                            // 判斷段落類型
                                                             const isBullet = p.startsWith('•');
                                                             const isNumbered = /^\d+\./.test(p);
-                                                            const isSubHeading = p.length < 60 && !isBullet && !isNumbered && p.endsWith(':');
 
                                                             if (isBullet) {
                                                                 return (
-                                                                    <div key={pi} className="flex items-start p-3 bg-gray-800/50 rounded-lg border-l-2 border-nvidia/50 paragraph-enter hover:bg-gray-800/70 transition-all" style={{ animationDelay: `${pi * 30}ms` }}>
-                                                                        <div className="w-6 h-6 rounded-full bg-nvidia/20 flex items-center justify-center mr-3 flex-shrink-0">
-                                                                            <i className="fas fa-check text-nvidia text-[10px]"></i>
+                                                                    <div key={pi} className="flex items-start p-2 bg-gray-800/50 rounded-md border-l-2 border-nvidia/50">
+                                                                        <div className="w-5 h-5 rounded-full bg-nvidia/20 flex items-center justify-center mr-2 flex-shrink-0">
+                                                                            <i className="fas fa-check text-nvidia text-[8px]"></i>
                                                                         </div>
-                                                                        <p className="text-sm text-gray-300 leading-relaxed pt-0.5">{p.substring(1).trim()}</p>
+                                                                        <p className="text-xs text-gray-300 leading-relaxed">{p.substring(1).trim()}</p>
                                                                     </div>
                                                                 );
                                                             }
@@ -1361,95 +2193,96 @@
                                                                 const match = p.match(/^(\d+)\.\s*(.*)/);
                                                                 if (match) {
                                                                     return (
-                                                                        <div key={pi} className="flex items-start p-4 bg-gradient-to-r from-nvidia/10 to-transparent rounded-xl border border-nvidia/20 paragraph-enter" style={{ animationDelay: `${pi * 30}ms` }}>
-                                                                            <div className="w-10 h-10 rounded-xl bg-nvidia flex items-center justify-center mr-4 flex-shrink-0 glow-nvidia-sm">
-                                                                                <span className="text-nvidia-black font-bold">{match[1]}</span>
+                                                                        <div key={pi} className="flex items-start p-2 bg-gradient-to-r from-nvidia/10 to-transparent rounded-md">
+                                                                            <div className="w-6 h-6 rounded-md bg-nvidia flex items-center justify-center mr-2 flex-shrink-0">
+                                                                                <span className="text-nvidia-black font-bold text-xs">{match[1]}</span>
                                                                             </div>
-                                                                            <div className="pt-2">
-                                                                                <p className="text-sm text-gray-200 leading-relaxed font-medium">{match[2]}</p>
-                                                                            </div>
+                                                                            <p className="text-xs text-gray-200 leading-relaxed pt-1">{match[2]}</p>
                                                                         </div>
                                                                     );
                                                                 }
                                                             }
 
-                                                            if (isSubHeading) {
-                                                                return (
-                                                                    <div key={pi} className="pt-4 pb-2 paragraph-enter" style={{ animationDelay: `${pi * 30}ms` }}>
-                                                                        <h4 className="font-bold text-nvidia flex items-center">
-                                                                            <div className="w-1 h-5 bg-nvidia rounded-full mr-3"></div>
-                                                                            <span className="section-title">{p}</span>
-                                                                        </h4>
-                                                                    </div>
-                                                                );
-                                                            }
-
-                                                            // 一般段落 - 引言風格
                                                             return (
-                                                                <div key={pi} className="relative pl-4 paragraph-enter" style={{ animationDelay: `${pi * 30}ms` }}>
-                                                                    <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-700 rounded-full"></div>
-                                                                    <p className="text-sm text-gray-300 leading-loose">{p}</p>
-                                                                </div>
+                                                                <p key={pi} className="text-xs text-gray-300 leading-relaxed pl-2 border-l border-gray-700">{p}</p>
                                                             );
                                                         })}
-                                                    </div>
-
-                                                    {/* 底部章節導航 */}
-                                                    <div className="mt-6 pt-4 border-t border-gray-700/30 flex items-center justify-between">
-                                                        <div className="flex items-center text-xs text-gray-500">
-                                                            <i className="fas fa-check-circle text-nvidia mr-2"></i>
-                                                            Section {idx + 1} of {c.fullArticle.length}
-                                                        </div>
-                                                        {idx < c.fullArticle.length - 1 && (
-                                                            <button
-                                                                onClick={() => { toggleSection(idx); toggleSection(idx + 1); }}
-                                                                className="flex items-center gap-2 text-xs text-nvidia hover:text-nvidia-light transition bg-nvidia/10 px-3 py-1.5 rounded-full"
-                                                            >
-                                                                Next <i className="fas fa-arrow-right"></i>
-                                                            </button>
-                                                        )}
                                                     </div>
                                                 </div>
                                             )}
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
-                        </div>
+                        )}
 
-                        {/* 總覽提示 */}
-                        <div className="mt-6 p-4 bg-gray-900/50 rounded-xl border border-gray-700/30 flex items-center">
-                            <i className="fas fa-info-circle text-nvidia mr-3"></i>
-                            <p className="text-xs text-gray-400">Click on each section to expand and read the full content.</p>
-                        </div>
-                    </div>
-                )}
 
-                {/* Team Section - 獨立區塊 */}
+                        {/* PM Role Connection - 放在左側欄 */}
+                        {c.jobConnection && <JobConnectionSection jobConnection={c.jobConnection} />}
 
-                {c.team && <TeamSection team={c.team} />}
-
-                {/* Video Carousel - 全寬橫跨左右 */}
-                {c.videos?.length > 0 && <VideoCarousel videos={c.videos} label={labels.videos} watchLabel={labels.watchVideo} fullWidth={true} />}
-
-                {/* Two Column Layout for other content */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                    <div className="lg:col-span-7 space-y-4">
-                        <ThemeExplorer themes={c.themes} label={labels.themes} />
-                        {c.jobLink && <a href={c.jobLink} target="_blank" className="inline-flex items-center gap-2 px-4 py-2 bg-nvidia text-nvidia-black rounded font-bold text-sm hover:bg-nvidia-light transition"><i className="fas fa-external-link-alt"></i>View Job Posting</a>}
+                        {/* References */}
                         {c.references?.length > 0 && (
-                            <div className="mt-4 p-4 bg-gray-800/50 rounded-lg border border-gray-700">
+                            <div className="p-3 bg-gray-800/50 rounded-lg border border-gray-700">
                                 <h4 className="text-xs font-bold text-gray-500 uppercase mb-2"><i className="fas fa-link mr-2"></i>References</h4>
                                 <div className="space-y-1">{c.references.map((r, i) => <a key={i} href={r} target="_blank" className="block text-xs text-nvidia hover:underline truncate">{r}</a>)}</div>
                             </div>
                         )}
-                        {c.isConclusion && <div className="mt-6 p-6 bg-gradient-to-r from-nvidia/20 to-transparent rounded-lg border border-nvidia/30"><h3 className="text-lg font-bold text-nvidia mb-2">Thank You!</h3><p className="text-sm text-gray-300">We hope this interactive CV demonstrates our passion for NVIDIA and the PM role. We would love the opportunity to discuss how we can contribute to NVIDIA's mission.</p><a href="https://nvidia.eightfold.ai/careers?query=PM&start=0&pid=893383960574&sort_by=relevance" target="_blank" className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-nvidia text-nvidia-black rounded-lg font-bold hover:bg-nvidia-light transition"><i className="fas fa-rocket"></i>Apply Now</a></div>}
+
+                        {/* Google Form Embed for Feedback */}
+                        {c.isFeedback && c.googleFormUrl && (
+                            <div className="info-card mt-4">
+                                <div className="flex items-center mb-4">
+                                    <div className="w-10 h-10 rounded-xl bg-nvidia flex items-center justify-center mr-3 glow-nvidia-sm">
+                                        <i className="fas fa-comment-dots text-nvidia-black"></i>
+                                    </div>
+                                    <div>
+                                        <h3 className="font-bold gradient-text">Feedback Form</h3>
+                                        <p className="text-xs text-gray-500">Share your thoughts with us</p>
+                                    </div>
+                                </div>
+                                <div className="rounded-xl overflow-hidden border border-gray-700/50">
+                                    <iframe
+                                        src={c.googleFormUrl}
+                                        width="100%"
+                                        height="600"
+                                        frameBorder="0"
+                                        marginHeight="0"
+                                        marginWidth="0"
+                                        className="bg-white rounded-lg"
+                                    >
+                                        Loading…
+                                    </iframe>
+                                </div>
+                                <p className="text-[10px] text-gray-500 mt-2 text-center">
+                                    <i className="fas fa-lock mr-1"></i>
+                                    Your responses are anonymous and secure
+                                </p>
+                            </div>
+                        )}
                     </div>
+
+                    {/* 右欄：Explore + Flash Cards + Self-Check */}
                     <div className="lg:col-span-5 space-y-4">
-                        {c.flashcards?.length > 0 && <div><h4 className="text-xs font-bold text-gray-500 uppercase mb-2">{labels.flashcards}</h4><div className="grid gap-3">{c.flashcards.map((f, i) => <Flashcard key={i} {...f} />)}</div></div>}
-                        {c.quiz?.length > 0 && <div><h4 className="text-xs font-bold text-gray-500 uppercase mb-2">{labels.quiz}</h4><SelfCheck questions={c.quiz} answers={scores[sub.id] || {}} onAnswer={(q, v) => onQuiz(sub.id, q, v)} labels={labels} /></div>}
+                        <ThemeExplorer themes={c.themes} label={labels.themes} />
+
+                        {c.flashcards?.length > 0 && (
+                            <FlashcardCarousel flashcards={c.flashcards} label={labels.flashcards} />
+                        )}
+
+                        {c.quiz?.length > 0 && (
+                            <QuizCard questions={c.quiz} answers={scores[sub.id] || {}} onAnswer={(q, v) => onQuiz(sub.id, q, v)} label={labels.quiz} />
+                        )}
+
+                        {c.jobLink && <a href={c.jobLink} target="_blank" className="inline-flex items-center gap-2 px-4 py-2 bg-nvidia text-nvidia-black rounded font-bold text-sm hover:bg-nvidia-light transition"><i className="fas fa-external-link-alt"></i>View Job Posting</a>}
+
+                        {c.isConclusion && <div className="p-4 bg-gradient-to-r from-nvidia/20 to-transparent rounded-lg border border-nvidia/30"><h3 className="text-base font-bold text-nvidia mb-2">Thank You!</h3><p className="text-xs text-gray-300">We hope this interactive CV demonstrates our passion for NVIDIA and the PM role.</p><a href="https://nvidia.eightfold.ai/careers?query=PM&start=0&pid=893383960574&sort_by=relevance" target="_blank" className="inline-flex items-center gap-2 mt-3 px-4 py-2 bg-nvidia text-nvidia-black rounded-lg font-bold text-sm hover:bg-nvidia-light transition"><i className="fas fa-rocket"></i>Apply Now</a></div>}
                     </div>
                 </div>
+
+                {/* 全寬區塊（放在雙欄下方） */}
+                {c.team && <TeamSection team={c.team} />}
+
+                {c.videos?.length > 0 && <VideoCarousel videos={c.videos} label={labels.videos} watchLabel={labels.watchVideo} fullWidth={true} />}
 
             </div>);
         };
@@ -1461,7 +2294,15 @@
             const [sidebar, setSidebar] = useState(true);
             const [scores, setScores] = useState({});
             const [glossaryKey, setGlossaryKey] = useState("");
+            const [theme, setTheme] = useState('dark');
             const footerRef = useRef(null);
+
+            const toggleTheme = () => {
+                const newTheme = theme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+                document.documentElement.classList.remove('dark', 'light');
+                document.documentElement.classList.add(newTheme);
+            };
 
             useEffect(() => { document.documentElement.classList.add('dark'); }, []);
             useEffect(() => { const h = () => setSidebar(window.innerWidth >= 1024); h(); window.addEventListener('resize', h); return () => window.removeEventListener('resize', h); }, []);
@@ -1498,6 +2339,14 @@
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
+                            {/* 主題切換按鈕 */}
+                            <button
+                                onClick={toggleTheme}
+                                className="w-9 h-9 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 flex items-center justify-center transition-all border border-gray-700/50 hover:border-nvidia/50"
+                                title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                            >
+                                <i className={`fas ${theme === 'dark' ? 'fa-sun text-yellow-400' : 'fa-moon text-gray-600'} text-sm`}></i>
+                            </button>
                             <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-gray-800/50 rounded-lg border border-gray-700/50">
                                 <span className="text-gray-500 text-xs">Score:</span>
                                 <span className="gradient-text font-bold text-sm">{totalScore}/{totalQuiz}</span>
@@ -1537,25 +2386,7 @@
                         </aside>
                         <main className={`flex-1 transition-all ${sidebar ? 'lg:ml-60' : ''}`}>
                             <div className="max-w-4xl mx-auto p-4 md:p-8 pb-24">
-                                {/* Page Header */}
-                                <header className="mb-8">
-                                    <div className="flex items-center gap-2 text-xs text-gray-500 mb-3">
-                                        <span className="px-2 py-1 bg-gray-800/50 rounded">{section.title}</span>
-                                        <i className="fas fa-chevron-right text-[8px] text-nvidia"></i>
-                                        <span className="text-nvidia font-medium">{sub.title}</span>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <div className="w-10 h-10 rounded-xl bg-nvidia text-nvidia-black flex items-center justify-center mr-4 glow-nvidia-sm">
-                                            <i className={`fas ${sub.icon} text-lg`}></i>
-                                        </div>
-                                        <div>
-                                            <h2 className="text-2xl md:text-3xl font-bold gradient-text">{sub.title}</h2>
-                                        </div>
-                                    </div>
-                                    <div className="h-1 w-20 bg-gradient-to-r from-nvidia to-nvidia-dark mt-4 rounded-full"></div>
-                                </header>
-
-                                <SubsectionContent sub={sub} scores={scores} onQuiz={handleQuiz} labels={content.labels} />
+                                <SubsectionContent sub={sub} section={section} scores={scores} onQuiz={handleQuiz} labels={content.labels} />
 
                                 {/* Footer */}
                                 <footer ref={footerRef} className="mt-12 border-t border-gray-800/50 pt-6">
