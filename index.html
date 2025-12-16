@@ -1612,39 +1612,113 @@
                                 id: "nvidia", title: "關於 NVIDIA", icon: "fa-microchip", content: {
                                     highlights: ["市值：$3.6T+ (2024) → $5T (2025年10月) - 首家達到 5 兆美元估值的公司", "FY2025 營收：$1305 億，TTM 達 $1870 億 - AI 驅動的爆發性成長", "CEO 黃仁勳獲選《金融時報》2025 年度人物，引領 AI 革命"],
                                     fullArticle: [
-                                        { title: "NVIDIA 簡介", paragraphs: ["NVIDIA 是一家美國科技公司，已發展成為高效能運算 (HPC) 和人工智慧 (AI) 兩大最具變革性技術領域的主導力量。", "該公司成立於 1993 年，因發明圖形處理器 (GPU) 而聞名全球，GPU 現已成為全球訓練和部署 AI 模型的必要硬體。"] },
-                                        { title: "2024/2025 財務亮點", paragraphs: ["• 市值：2024 年 6 月超過 $3.3T，成為全球最有價值公司。2025 年 7 月達 $4T，10 月達 $5T。", "• FY2025 營收：$1305 億（較 FY2024 的 $609 億成長 114%），TTM 達 $1870 億。", "• 資料中心業務佔總營收 88%，由 Hopper H100/H200 及 Blackwell 架構驅動。"] },
-                                        { title: "NVIDIA 做什麼", paragraphs: ["1. 圖形與遊戲：NVIDIA 以 GeForce GPU 革新電腦圖形，提供逼真視覺、即時光線追蹤和 AI 驅動效能。", "2. 人工智慧與資料中心：NVIDIA GPU 為機器學習、深度學習、大型語言模型 (LLM) 和電腦視覺的 AI 模型提供動力。", "3. 加速運算：結合 GPU、CPU、網路和軟體，加速科學模擬、氣候建模和藥物開發等工作負載。", "4. 自駕系統：開發自駕車 (NVIDIA DRIVE)、機器人和智慧工廠平台。"] },
-                                        { title: "關鍵產品與技術", paragraphs: ["• Blackwell 架構：2024 年推出的下一代 GPU 架構，B100/B200 晶片較 H100 提供高達 4 倍 AI 訓練效能。", "• Grace Hopper 超級晶片：結合 Arm Grace CPU 和 Hopper GPU，專為大規模 AI 和 HPC 應用設計。", "• CUDA 平台：NVIDIA 的軟體生態系統，擁有超過 400 萬開發者，廣泛應用於 AI、渲染和科學運算。"] }
+                                        {
+                                            title: "NVIDIA 簡介", paragraphs: [
+                                                "NVIDIA 是一家美國科技公司，已發展成為高效能運算 (HPC) 和人工智慧 (AI) 兩大最具變革性技術領域的主導力量。",
+                                                "該公司成立於 1993 年，因發明圖形處理器 (GPU) 而聞名全球，GPU 現已成為全球訓練和部署 AI 模型的必要硬體。"
+                                            ]
+                                        },
+                                        {
+                                            title: "2024/2025 財務亮點", paragraphs: [
+                                                "• 市值：2024 年 6 月超過 $3.3T，成為全球最有價值公司。2025 年 7 月達 $4T，10 月達 $5T。",
+                                                "• 營收成長：FY2024 營收為 $609 億。FY2025 爆發至 $1305 億。TTM 營收（截至 2025 年 10 月）達 $1870 億。",
+                                                "• 股價表現：NVIDIA 於 2025 年底成為首家達到 5 兆美元估值的上市公司。",
+                                                "• AI 主導地位：該公司控制超過 80% 用於建構 AI 系統的晶片市場。"
+                                            ]
+                                        },
+                                        {
+                                            title: "黃仁勳的願景", paragraphs: [
+                                                "黃仁勳，NVIDIA 創辦人暨執行長，獲選《金融時報》2025 年度人物，肯定他在席捲商業世界的「AI 狂潮」中扮演的角色。",
+                                                "黃仁勳以 NVIDIA 的能力為框架描繪產業未來：「AI 工廠」和「物理 AI」，將公司定位為重大數位轉型的不可或缺夥伴。",
+                                                "儘管帶領 NVIDIA 達到 $5T 估值，黃仁勳仍保持「我們離倒閉只有 30 天」的心態——這種信念源自過去瀕臨破產的經驗，驅動持續創新。"
+                                            ]
+                                        },
+                                        {
+                                            title: "Blackwell 架構 (2024)", paragraphs: [
+                                                "NVIDIA 最新 GPU 微架構，於 GTC 2024（2024 年 3 月 18 日）正式發布。專為生成式 AI 時代、高端 AI 工作負載、深度學習、3D 渲染和數據分析設計。",
+                                                "• 2080 億個電晶體 - 採用客製化台積電 4NP 製程的雙晶片設計製造",
+                                                "• 晶片間互連速度達 10 TB/s，實現前所未有的數據傳輸速度",
+                                                "• 第五代 Tensor Core，支援全新 MXFP6 和 MXFP4 精度用於 AI 運算",
+                                                "• 相較 Hopper，即時推論的成本和能耗降低 25 倍",
+                                                "• 產品線：B100、B200、GB200（整合 Blackwell GPU 與 Grace CPU）",
+                                                "• 黃仁勳於 2025 年 2 月表示需求「驚人」"
+                                            ]
+                                        },
+                                        {
+                                            title: "Grace Hopper 超級晶片", paragraphs: [
+                                                "NVIDIA GH200 Grace Hopper 超級晶片結合基於 Arm 的 NVIDIA Grace CPU 與 NVIDIA Hopper GPU，採用 NVLink-C2C 互連技術。",
+                                                "• 專為大規模 AI 和高效能運算 (HPC) 應用設計",
+                                                "• 總頻寬高達 900 GB/s - 比標準 PCIe Gen 5 高 7 倍",
+                                                "• 雙 GH200 配置提供比 H100 多 3.5 倍的 GPU 記憶體容量和 3 倍的頻寬",
+                                                "• 於 2023 年 5 月進入全面量產，目前為全球 AI 基礎設施提供動力"
+                                            ]
+                                        },
+                                        {
+                                            title: "NVIDIA 做什麼", paragraphs: [
+                                                "1. 圖形與遊戲：NVIDIA 以 GeForce GPU 革新電腦圖形，為遊戲玩家和創作者提供逼真視覺、即時光線追蹤和 AI 驅動效能。",
+                                                "2. 人工智慧與資料中心：NVIDIA GPU 為機器學習、深度學習、大型語言模型 (LLM) 和電腦視覺中使用的 AI 模型提供動力。",
+                                                "3. 加速運算：結合 GPU、CPU、網路和軟體，NVIDIA 加速包括科學模擬、氣候建模和藥物發現等工作負載。",
+                                                "4. 自駕系統：NVIDIA 開發自駕車 (NVIDIA DRIVE)、機器人和智慧工廠的平台。"
+                                            ]
+                                        },
+                                        {
+                                            title: "為什麼 NVIDIA 重要", paragraphs: [
+                                                "NVIDIA 不僅是硬體公司——它是平台公司。其影響力來自以下三者的緊密整合：",
+                                                "• 硬體（GPU、AI 晶片 - H100、H200、Blackwell B100/B200、Grace Hopper）",
+                                                "• 軟體（CUDA 擁有 400 萬以上開發者、AI 框架、Omniverse）",
+                                                "• 生態系統（全球開發者、研究人員、企業）",
+                                                "這種策略使 NVIDIA 能夠塑造整個產業，而非僅在零件上競爭。"
+                                            ]
+                                        }
                                     ],
-                                    themes: [{ title: "財務成長", subThemes: [{ title: "市值突破", content: "成為首家達到 $5T 估值的公司。" }, { title: "營收飆升", content: "FY2025 營收 $1305 億，年增 114%。" }] }, { title: "技術領導", subThemes: [{ title: "Blackwell 架構", content: "下一代 GPU，AI 訓練效能提升 4 倍。" }, { title: "CUDA 生態系統", content: "超過 400 萬開發者的軟體平台。" }] }],
-                                    flashcards: [{ front: "NVIDIA 市值里程碑", back: "2025 年 10 月達 $5T，成為首家達到此估值的公司。" }, { front: "Blackwell 架構", back: "2024 年推出的下一代 GPU，AI 效能較 H100 提升 4 倍。" }, { front: "CUDA 開發者數量", back: "超過 400 萬開發者使用 NVIDIA 的 CUDA 平台。" }],
+                                    themes: [{ title: "業務區塊", subThemes: [{ title: "圖形與遊戲", content: "GeForce GPU 提供即時光線追蹤和 AI 驅動效能" }, { title: "AI 與資料中心", content: "為機器學習、深度學習、LLM 和電腦視覺提供動力。80%+ AI 晶片市佔率。" }, { title: "加速運算", content: "科學模擬、氣候建模、藥物發現" }, { title: "自駕系統", content: "NVIDIA DRIVE 用於自駕車、機器人、智慧工廠" }] }, { title: "最新產品", subThemes: [{ title: "Blackwell (2024)", content: "2080 億電晶體，效率較 Hopper 提升 25 倍，B100/B200/GB200 產品線" }, { title: "Grace Hopper", content: "GH200 超級晶片 - Arm CPU + Hopper GPU，900 GB/s 頻寬" }, { title: "H100/H200", content: "Hopper 架構 - 目前 AI 資料中心的主力" }] }, { title: "2024/2025 里程碑", subThemes: [{ title: "市值", content: "$3.3T (2024年6月) → $5T (2025年10月) - 首家達到 $5T 的公司" }, { title: "營收", content: "FY2024: $609億 → FY2025: $1305億 → TTM: $1870億" }, { title: "領導力", content: "黃仁勳獲選《金融時報》2025 年度人物" }] }],
+                                    flashcards: [{ front: "NVIDIA 何時成立？", back: "1993 年 - 發明了 GPU" }, { front: "NVIDIA 市值 (2025)", back: "2025 年 10 月達 $5 兆 - 史上首家公司" }, { front: "NVIDIA FY2025 營收", back: "$1305 億（TTM 達 $1870 億）" }, { front: "什麼是 Blackwell？", back: "2024 GPU 架構：2080 億電晶體，效率較 Hopper 提升 25 倍，專為生成式 AI 時代設計" }, { front: "什麼是 Grace Hopper？", back: "GH200 超級晶片結合 Arm Grace CPU + Hopper GPU，900 GB/s 頻寬" }, { front: "黃仁勳的經營哲學", back: "「我們離倒閉只有 30 天」- 驅動持續創新" }, { front: "AI 晶片市佔率", back: "NVIDIA 控制超過 80% 用於 AI 的晶片市場" }],
                                     quiz: [
-                                        { q: "2025 年 10 月 NVIDIA 達到多少市值？", options: ["$2T", "$3T", "$4T", "$5T"], answer: 3 },
-                                        { q: "Blackwell 架構較 H100 提供多少 AI 訓練效能提升？", options: ["2 倍", "3 倍", "4 倍", "5 倍"], answer: 2 },
-                                        { q: "Grace Hopper 超級晶片結合什麼？", options: ["兩個 GPU", "Arm Grace CPU 和 Hopper GPU", "Intel CPU 和 NVIDIA GPU", "AMD CPU 和 NVIDIA GPU"], answer: 1 },
-                                        { q: "NVIDIA FY2025 營收是多少？", options: ["$609 億", "$1000 億", "$1305 億", "$1870 億"], answer: 2 }
-                                    ],
-                                    references: ["https://www.britannica.com/money/NVIDIA-Corporation", "https://companiesmarketcap.com/nvidia/marketcap/", "https://www.ft.com/content/person-of-the-year-2024"]
+                                        { q: "NVIDIA 在 2025 年 10 月達到什麼歷史性市值里程碑？", options: ["$1 兆", "$3 兆", "$5 兆", "$10 兆"], answer: 2 },
+                                        { q: "NVIDIA 的 Blackwell 架構以什麼聞名？", options: ["更低功耗", "2080 億電晶體和較 Hopper 提升 25 倍效率", "更小外形尺寸", "更低價格"], answer: 1 },
+                                        { q: "什麼是 Grace Hopper 超級晶片？", options: ["遊戲 GPU", "Arm CPU + Hopper GPU 組合，900 GB/s 頻寬", "加密貨幣挖礦卡", "入門級筆電 GPU"], answer: 1 },
+                                        { q: "NVIDIA FY2025 營收是多少？", options: ["$609 億", "$1000 億", "$1305 億", "$2000 億"], answer: 2 }
+                                    ]
                                 }
                             },
                             {
-                                id: "pmrole", title: "PM 角色", icon: "fa-user-tie", content: {
-                                    highlights: ["PM 位於商業策略、技術可行性和用戶體驗的策略交叉點", "核心職責：定義產品的 WHY（願景）、WHAT（功能）和 WHEN（時程）", "PM 同時扮演客戶倡導者、工程溝通者和高層策略家的角色"],
+                                id: "pmrole", title: "PM 角色", icon: "fa-briefcase", content: {
+                                    highlights: ["常被描述為「產品的 CEO」，PM 位於商業、技術和用戶體驗的交叉點", "PM 定義產品的 why、what 和 when", "在 NVIDIA，PM 是生態系統架構師，管理平台生命週期"],
                                     fullArticle: [
-                                        { title: "什麼是產品經理？", paragraphs: ["產品經理 (PM) 是負責產品策略、路線圖和跨部門領導的角色。PM 坐在商業（策略、ROI）、技術（可行性）和用戶體驗（同理心、UX）的交叉點。", "PM 不是「產品的老闆」，而是影響者和推動者，透過願景、數據和說服力引導團隊。"] },
-                                        { title: "PM 核心職責", paragraphs: ["1. 願景與策略：定義產品願景並與公司目標對齊。", "2. 優先排序：使用框架（RICE、MoSCoW）決定什麼先做。", "3. 執行與交付：與工程、設計和行銷協作推出產品。", "4. 設定指標：定義成功標準並追蹤 KPI。"] },
-                                        { title: "PM 與利益關係人", paragraphs: ["• 客戶：PM 是客戶需求的倡導者，透過用戶研究收集洞察。", "• 工程師：PM 是技術團隊的溝通橋樑，翻譯業務需求為技術規格。", "• 高層：PM 是策略家，向上管理並爭取資源和支持。"] }
+                                        {
+                                            title: "產品經理介紹", paragraphs: [
+                                                "產品經理 (PM) 是現代商業中最關鍵且複雜的角色之一，尤其在科技公司。",
+                                                "常被描述為「產品的 CEO」，產品經理位於三個核心領域的策略交叉點：商業（策略、ROI、市場）、技術（可行性、技術債）和用戶體驗（同理心、UX）。",
+                                                "產品經理的主要職責是定義產品的 why、what 和 when，確保公司建造的產品對客戶有價值、工程團隊能實現，並與整體商業目標和市場機會一致。"
+                                            ]
+                                        },
+                                        {
+                                            title: "產品經理作為橋樑", paragraphs: [
+                                                "• 客戶/用戶：倡導者。PM 研究用戶需求、分析回饋（調查、數據），並代表客戶聲音以確保產品市場契合。",
+                                                "• 工程師/開發者：溝通者。PM 將產品願景和用戶需求轉化為清晰、優先排序的技術需求（如用戶故事和產品待辦清單）。",
+                                                "• 高層/商業領導：策略家。PM 定義產品策略、建立路線圖，並基於市場數據和潛在 ROI 證明決策。",
+                                                "• 設計師（UX/UI）：協作者。PM 與設計師緊密合作，確保產品直覺、易用，並提供優秀的用戶體驗。"
+                                            ]
+                                        },
+                                        {
+                                            title: "核心職責", paragraphs: [
+                                                "產品經理引導產品經歷整個生命週期，從最初的構想到發布和持續迭代。主要職責包括：",
+                                                "• 定義願景與策略：建立產品的長期方向和目標，包括市場分析和競爭評估。",
+                                                "• 優先排序：決定建造哪些功能、哪些延後，以最大化價值交付並管理有限資源。",
+                                                "• 執行與交付：監督開發流程，通常使用敏捷方法，確保產品符合品質標準和時程。",
+                                                "• 設定指標：定義關鍵績效指標（KPI），如用戶採用率、參與度或營收來衡量產品成功。"
+                                            ]
+                                        }
                                     ],
-                                    themes: [{ title: "PM 交叉點", subThemes: [{ title: "商業", content: "策略思維、ROI 分析、市場定位。" }, { title: "技術", content: "理解技術可行性和工程限制。" }, { title: "用戶體驗", content: "用戶同理心和以人為本的設計思維。" }] }],
-                                    flashcards: [{ front: "PM 交叉點", back: "商業（策略、ROI）+ 技術（可行性）+ 用戶體驗（同理心、UX）" }, { front: "PM 主要職責", back: "定義產品的 WHY、WHAT 和 WHEN" }, { front: "PM 核心領域", back: "願景與策略、優先排序、執行與交付、設定指標" }],
+                                    themes: [{ title: "PM 作為橋樑", subThemes: [{ title: "客戶/用戶", content: "倡導者 - 研究需求、分析回饋、代表客戶聲音" }, { title: "工程師", content: "溝通者 - 將願景轉化為優先排序的技術需求" }, { title: "高層", content: "策略家 - 定義策略、建立路線圖、用數據證明決策" }, { title: "設計師", content: "協作者 - 確保產品直覺並提供優秀用戶體驗" }] }, { title: "核心職責", subThemes: [{ title: "願景與策略", content: "長期方向、市場分析、競爭評估" }, { title: "優先排序", content: "決定建造什麼、管理有限資源" }, { title: "執行", content: "敏捷方法、品質標準、時程" }, { title: "指標", content: "KPI：採用率、參與度、營收" }] }],
+                                    flashcards: [{ front: "PM 交叉點", back: "商業（策略、ROI）+ 技術（可行性）+ 用戶體驗（同理心、UX）" }, { front: "PM 主要職責", back: "定義產品的 WHY、WHAT 和 WHEN" }, { front: "PM 核心領域", back: "願景與策略、優先排序、執行與交付、設定指標" }, { front: "PM 利害關係人", back: "客戶（倡導者）、工程師（溝通者）、高層（策略家）、設計師（協作者）" }],
                                     quiz: [
                                         { q: "產品經理角色位於哪些領域的交叉點？", options: ["銷售、行銷、財務", "商業、技術、用戶體驗", "工程、設計、營運", "人資、法務、合規"], answer: 1 },
                                         { q: "根據本分析，PM 的主要職責是什麼？", options: ["為產品寫程式", "定義產品的 WHY、WHAT 和 WHEN", "管理銷售團隊", "設計用戶介面"], answer: 1 },
-                                        { q: "PM 對工程師扮演什麼角色？", options: ["老闆", "溝通橋樑和需求翻譯者", "競爭對手", "外包商"], answer: 1 }
+                                        { q: "PM 對工程師扮演什麼角色？", options: ["倡導者", "溝通者", "策略家", "監督者"], answer: 1 }
                                     ],
                                     jobLink: "https://nvidia.eightfold.ai/careers?query=PM&start=0&pid=893383960574&sort_by=relevance",
-                                    references: ["https://www.edstellar.com/blog/product-manager-roles-responsibilities", "https://www.invensislearning.com/blog/product-manager-roles-responsibilities/"]
+                                    references: ["https://www.britannica.com/money/NVIDIA-Corporation", "https://cacm.acm.org/opinion/nvidia-at-the-center-of-the-generative-ai-ecosystem-for-now/", "https://www.edstellar.com/blog/product-manager-roles-responsibilities", "https://www.invensislearning.com/blog/product-manager-roles-responsibilities/"]
                                 }
                             }
                         ]
@@ -1653,57 +1727,256 @@
                         id: 1, title: "2. 洞察分析", icon: "fa-lightbulb", color: "blue",
                         subsections: [
                             {
-                                id: "competitive", title: "競爭動態", icon: "fa-chess", content: {
-                                    highlights: ["CUDA 平台擁有超過 400 萬開發者，創造巨大的網路效應和轉換成本", "NVIDIA 在 AI 加速器市場佔有 80%+ 市佔率，形成近乎壟斷地位", "競爭者（AMD、Intel、自研晶片）難以打破 CUDA 生態系統的鎖定效應"],
+                                id: "company-job", title: "競爭動態", icon: "fa-building", content: {
+                                    highlights: ["NVIDIA 是平台協調者，整合硬體、軟體、雲端和開發者生態系統", "CUDA 創造網路效應：開發者使用 CUDA → 更強 GPU 吸引力 → 更高轉換成本", "NVIDIA 的 PM 是生態系統架構師，而非僅是功能經理"],
                                     fullArticle: [
-                                        { title: "NVIDIA 的競爭護城河", paragraphs: ["NVIDIA 的競爭優勢不僅在於硬體性能，更在於軟體生態系統。CUDA 平台已成為 AI 開發的事實標準，超過 400 萬開發者、數十萬個已優化程式庫和十多年的生態投資，創造了幾乎不可逾越的轉換成本。", "這種「軟硬整合」策略是 NVIDIA 護城河的核心：即使競爭對手推出性價比更高的硬體，開發者也很難放棄已經熟悉的 CUDA 工具鏈。"] },
-                                        { title: "波特五力分析", paragraphs: ["• 現有競爭者威脅（低）：AMD 和 Intel 的 AI 加速器市佔率加起來不到 20%。", "• 新進入者威脅（低）：開發 GPU 需要數十億美元研發和多年技術積累。", "• 供應商議價能力（中）：台積電是關鍵供應商，但 NVIDIA 是其最大客戶之一。", "• 買家議價能力（低）：科技巨頭需要 NVIDIA GPU 來訓練 AI 模型。", "• 替代品威脅（中低）：自研晶片（如 Google TPU）是潛在替代品，但需要巨大投資。"] }
+                                        {
+                                            title: "公司分析 – NVIDIA 美國", paragraphs: [
+                                                "將 NVIDIA 定位在美國，不僅僅是 GPU（圖形處理器）生產商，而是將硬體、軟體、雲端基礎設施和開發者生態系統整合成一個相互強化系統的平台協調者。CUDA（統一運算設備架構）是這個生態系統的主要基礎，這是一個平行運算平台，已成為開發 AI（人工智慧）和 HPC（高效能運算）應用的產業標準，被全球數百萬開發者使用。",
+                                                "這種轉型創造了一種網路效應形式：開發者使用 CUDA → NVIDIA GPU 的吸引力越強 → 轉移到競爭對手平台的成本越高。這一陳述也反映在公司的官方文件中，將 NVIDIA 定位為專注於 AI 和加速運算的全棧運算公司。",
+                                                "除了 CUDA，NVIDIA DGX Cloud 和 NVIDIA Omniverse Cloud 等服務的擴展表明，NVIDIA 美國正朝著多邊平台商業模式發展，服務開發者、企業、雲端供應商以及汽車和製造業等產業。通過整合高端硬體（H100、A100）和專有軟體棧，NVIDIA 以「開放但受控」的平衡方式管理平台治理——開發者可以自由獲取工具和 SDK，但核心技術仍由 NVIDIA 控制。"
+                                            ]
+                                        },
+                                        {
+                                            title: "波特五力分析", paragraphs: [
+                                                "NVIDIA 在美國的競爭地位看起來很強，但面臨幾個需要管理的動態：",
+                                                "• 新進入者威脅是低的，因為潛在的新參與者不僅需要在硬體層面競爭，還需要建立軟體生態系統、工具、程式庫和開發者社群。這是 NVIDIA 通過 CUDA 及其支援基礎設施在十多年間建立的壁壘。",
+                                                "• 供應商議價能力是中等的，因為半導體供應鏈非常複雜，但 NVIDIA 的規模和策略關係最大程度地減少了這種壓力。",
+                                                "• 買家議價能力是中等到高的，因為大型科技公司大量採購 GPU，同時也在開發自己的內部 AI 晶片。最近的產業報告強調雲端公司尋求 GPU 替代品作為長期效率措施的趨勢。",
+                                                "• 替代品威脅是中等到高的，由於專門的 AI 晶片如 TPU（張量處理器）和 Trainium 的開發，旨在優化特定工作負載。然而，這些替代品仍面臨軟體相容性和生態系統限制的挑戰，使 NVIDIA 的主導地位得以持續。",
+                                                "• 競爭對手之間的競爭是複雜的，因為許多競爭對手同時也是合作夥伴和客戶。這創造了共競動態——例如，AWS 為雲端服務購買數千個 NVIDIA GPU，但同時開發自己的內部加速器。"
+                                            ]
+                                        },
+                                        {
+                                            title: "未來展望", paragraphs: [
+                                                "最近的發展，如 NVIDIA 在美國建立全國 AI 基礎設施的倡議和合作夥伴關係，顯示公司如何通過可互通服務、軟體和硬體的組合持續擴張——一種加強 NVIDIA 地位的平台包圍 (platform envelopment) 形式。該策略不僅是維持現有優勢，而是為涉及多方的未來生態系統奠定基礎。"
+                                            ]
+                                        }
                                     ],
-                                    themes: [{ title: "護城河分析", subThemes: [{ title: "CUDA 生態系統", content: "400 萬+ 開發者，創造巨大網路效應。" }, { title: "轉換成本", content: "開發者難以放棄熟悉的工具鏈和已優化的程式碼。" }] }, { title: "波特五力", subThemes: [{ title: "競爭強度", content: "低 - NVIDIA 市佔率超過 80%。" }, { title: "替代品威脅", content: "中低 - 自研晶片需要巨大投資。" }] }],
-                                    flashcards: [{ front: "CUDA 開發者數量", back: "超過 400 萬開發者使用 CUDA 平台。" }, { front: "NVIDIA AI 晶片市佔率", back: "超過 80%，形成近乎壟斷地位。" }, { front: "護城河核心", back: "軟硬整合策略和 CUDA 生態系統的鎖定效應。" }],
+                                    jobConnection: {
+                                        title: "NVIDIA 美國產品經理",
+                                        subtitle: "這是我們選擇分析的 PM 角色",
+                                        connectionExplanation: "理解 NVIDIA 的競爭動態對於在這個 PM 角色中表現出色至關重要。PM 必須駕馭複雜的共競關係、維持平台鎖定效應，並策略性地回應競爭威脅——以上都是分析的概念。",
+                                        keyPoints: [
+                                            { icon: "fa-chess", title: "生態系統架構師", description: "PM 作為生態系統架構師——不僅僅是功能經理。直接負責平台生命週期、向後相容性和跨產業互操作性。" },
+                                            { icon: "fa-handshake", title: "共競導航者", description: "必須理解 NVIDIA 的主要合作夥伴（AWS、Google Cloud、Microsoft Azure）同時也在開發自己的加速器。PM 必須策劃有說服力的價值主張以維持合作夥伴依賴。" },
+                                            { icon: "fa-eye", title: "AMC 框架：認知", description: "PM 必須具備對替代創新如下一代 TPU 或新 AI ASIC 的認知。" },
+                                            { icon: "fa-bullseye", title: "AMC 框架：動機", description: "他們需要維持生態系統主導地位和推動持續平台改進的動機。" },
+                                            { icon: "fa-cogs", title: "AMC 框架：能力", description: "他們需要技術商業能力，通過軟體優化、效能調校和服務擴展（Enterprise AI、Omniverse、DGX Cloud）來回應。" }
+                                        ],
+                                        jobLink: "https://nvidia.eightfold.ai/careers?query=PM&start=0&pid=893383960574&sort_by=relevance"
+                                    },
+                                    themes: [{ title: "公司分析 – NVIDIA 美國", subThemes: [{ title: "平台協調者", content: "NVIDIA 不僅是 GPU 生產商，而是將硬體、軟體、雲端基礎設施和開發者生態系統整合成相互強化系統的平台協調者。" }, { title: "網路效應", content: "開發者使用 CUDA → 更強 GPU 吸引力 → 競爭對手更高的轉換成本。" }, { title: "多邊平台", content: "DGX Cloud 和 Omniverse Cloud 代表 NVIDIA 朝向服務開發者、企業、雲端供應商和產業的發展。" }] }, { title: "波特五力", subThemes: [{ title: "進入壁壘", content: "低威脅 - 十多年建立的 CUDA 生態系統創造高壁壘。" }, { title: "議價能力", content: "供應商：中等 | 買家：中等到高（大型科技公司開發自己的晶片）" }, { title: "替代品與競爭", content: "TPU、Trainium 構成威脅但面臨生態系統限制。複雜的共競動態。" }] }],
+                                    flashcards: [{ front: "什麼是 CUDA？", back: "統一運算設備架構 - 一個平行運算平台，是 AI 和 HPC 應用的產業標準。" }, { front: "NVIDIA 的 PM 角色", back: "生態系統架構師，負責平台生命週期、向後相容性和跨產業互操作性。" }, { front: "網路效應", back: "開發者使用 CUDA → 更強 GPU 吸引力 → 競爭對手更高的轉換成本" }, { front: "共競例子", back: "AWS 為雲端服務購買數千 NVIDIA GPU，但同時開發內部加速器。" }, { front: "AMC 框架", back: "認知-動機-能力：了解替代品、維持主導動機、具備技術商業能力回應。" }],
                                     quiz: [
-                                        { q: "CUDA 平台有多少開發者？", options: ["100 萬", "200 萬", "400 萬以上", "1000 萬"], answer: 2 },
-                                        { q: "網路效應如何強化 NVIDIA 的競爭地位？", options: ["降低價格", "更多開發者吸引更多開發者和客戶", "減少研發成本", "增加供應商"], answer: 1 },
-                                        { q: "PM 在競爭分析中扮演什麼角色？", options: ["寫程式", "分析競爭格局並制定策略", "管理人資", "設計廣告"], answer: 1 },
-                                        { q: "波特五力中，NVIDIA 面臨的最大威脅是什麼？", options: ["現有競爭者", "替代品（自研晶片）", "新進入者", "供應商"], answer: 1 }
+                                        { q: "CUDA 代表什麼？", options: ["Central Unified Data Architecture", "Compute Unified Device Architecture", "Computer Universal Development Application", "Concurrent Utility Design Architecture"], answer: 1 },
+                                        { q: "NVIDIA 如何通過其平台創造網路效應？", options: ["通過降低 GPU 價格", "開發者使用 CUDA → 更強 GPU 吸引力 → 更高轉換成本", "通過獨家遊戲合作", "通過收購競爭對手"], answer: 1 },
+                                        { q: "根據此分析，PM 在 NVIDIA 的主要角色是什麼？", options: ["功能經理", "銷售代表", "生態系統架構師", "軟體開發者"], answer: 2 },
+                                        { q: "根據波特五力，新進入 NVIDIA 市場的威脅程度是？", options: ["高 - 容易進入", "低 - CUDA 生態系統創造高壁壘", "中 - 平衡競爭", "非常高 - 很多新競爭者"], answer: 1 }
                                     ],
-                                    jobConnection: { title: "PM 如何運用競爭分析", connectionExplanation: "理解競爭動態是 PM 核心技能。PM 需要分析競爭格局，識別市場機會，並制定差異化策略。" },
-                                    references: ["https://www.marketwatch.com/investing/stock/nvda", "https://www.wired.com/story/nvidia-gpu-market-dominance/"]
+                                    references: ["https://www.nvidia.com/en-us/data-center/dgx-cloud/", "https://nvidianews.nvidia.com/", "https://docs.nvidia.com/"]
                                 }
                             },
                             {
-                                id: "platform", title: "平台策略", icon: "fa-network-wired", content: {
-                                    highlights: ["NVIDIA 是多邊平台：連接開發者、企業客戶、雲端供應商和產業合作夥伴", "CUDA 是平台核心：免費提供 SDK 吸引開發者，鎖定生態系統", "「開放但受控」的治理模式：開發者可免費使用工具，但核心技術由 NVIDIA 掌控"],
+                                id: "platform", title: "平台策略", icon: "fa-layer-group", content: {
+                                    highlights: [
+                                        "先發優勢：CUDA（2006）+ AI 定位（2012 AlexNet）+ ChatGPT 時代（2023 H100）",
+                                        "平台鎖定效應：GPU + 軟體 + 顧問服務創造整合解決方案生態系統",
+                                        "差異化行銷策略：避免紅海競爭，等待正確時機進入新市場"
+                                    ],
                                     fullArticle: [
-                                        { title: "NVIDIA 的平台商業模式", paragraphs: ["NVIDIA 不僅僅是賣晶片的硬體公司，更是經營多邊平台的生態系統公司。平台的四個參與者群體：", "1. 開發者：使用 CUDA SDK 開發 AI 應用。", "2. 企業客戶：購買 GPU 和 DGX 系統進行 AI 訓練。", "3. 雲端供應商：AWS、Azure、GCP 提供 NVIDIA GPU 雲端服務。", "4. 產業合作夥伴：汽車、醫療、製造業使用 NVIDIA 平台進行產業應用。"] },
-                                        { title: "平台鎖定機制", paragraphs: ["NVIDIA 透過多種機制鎖定用戶：", "• 技術鎖定：CUDA 程式碼無法在非 NVIDIA 硬體上執行。", "• 學習曲線鎖定：開發者投入大量時間學習 CUDA，不願轉換。", "• 生態系統鎖定：已優化的程式庫（cuDNN、TensorRT）僅支援 NVIDIA。", "• 效能鎖定：針對 NVIDIA 硬體優化的軟體在其他平台效能下降。"] }
+                                        {
+                                            title: "先發優勢（First-Mover Advantage）", paragraphs: [
+                                                "2006 年，NVIDIA 發布 CUDA（統一運算設備架構），為 GPU 平行運算鋪路。這個策略性舉措讓 NVIDIA 在加速運算領域領先競爭對手數年。",
+                                                "2012 年，AlexNet 使用 NVIDIA 的 GPU 橫掃 ImageNet 競賽後，公司從此鎖定 AI 這條路作為核心業務。這個分水嶺時刻證明了 GPU 在深度學習工作負載上的優越性。",
+                                                "2023 年，ChatGPT 興起，而 NVIDIA 早已通過 H100 GPU 確立了自己的地位。其產品不僅處於領先地位，Meta、Microsoft 等知名公司都願意成為「恐慌性買家」。",
+                                                "這就是 NVIDIA 獲得先發優勢的方式：它定義了市場，而不是等待需求——而是創造供給。通過早期投資平行運算基礎設施和 AI 生態系統，NVIDIA 創造了一個開發者採用和硬體卓越的自我強化循環。"
+                                            ]
+                                        },
+                                        {
+                                            title: "平台鎖定效應", paragraphs: [
+                                                "NVIDIA 使用生態封鎖作為防禦策略。它已成為產業標準。這就是為什麼即使 AMD 和 Google 開發自己的晶片，仍然難以超越 NVIDIA。",
+                                                "• 完整解決方案生態系統：NVIDIA 不僅銷售晶片，而是銷售包含 GPU、軟體、顧問服務的整套解決方案，鎖定客戶並吸引開發者。",
+                                                "• 顯示卡市場防禦：NVIDIA 採取防禦性定價策略。當 AMD 發布具競爭力的定價產品時，NVIDIA 也發布 LHR 節流和分層 SKU 來控制價格和防禦市場份額。",
+                                                "• AI 晶片市場溢價：NVIDIA 利用其高密度技術和品牌形象處於高價位區域，同時避免價格戰。這讓 NVIDIA 保持高利潤率，而競爭對手難以同時匹配性能和生態系統。"
+                                            ]
+                                        },
+                                        {
+                                            title: "差異化行銷策略", paragraphs: [
+                                                "NVIDIA 不會盲目進入市場。在非核心領域，NVIDIA 以策略耐心冷靜決策。",
+                                                "• CPU 市場進入：在 CPU 市場，NVIDIA 沒有急於與 Intel 和 AMD 正面競爭。相反，它等到資料中心的異構運算需求明顯後，才推出與其 GPU 深度整合的 Grace ARM CPU——從一開始就以差異化方式進入市場。",
+                                                "• Chiplet 策略：同樣地，在 chiplet 設計上，NVIDIA 先觀察市場對 AMD MI300 的反應，然後才在 Blackwell 世代引入多晶片封裝，平衡技術成熟度與風險控制。",
+                                                "這種方法展示了 NVIDIA 的策略紀律：不是立即在每個市場競爭，而是等待最佳時機，讓其整合平台方法提供最大差異化。"
+                                            ]
+                                        }
                                     ],
-                                    themes: [{ title: "平台參與者", subThemes: [{ title: "開發者", content: "400 萬+ 使用 CUDA 的開發者。" }, { title: "企業客戶", content: "購買 GPU 和 DGX 系統的企業。" }, { title: "雲端供應商", content: "AWS、Azure、GCP 等提供 NVIDIA GPU 服務。" }] }, { title: "鎖定機制", subThemes: [{ title: "技術鎖定", content: "CUDA 程式碼只能在 NVIDIA GPU 上執行。" }, { title: "學習曲線鎖定", content: "開發者投入時間學習，不願轉換。" }] }],
-                                    flashcards: [{ front: "NVIDIA 平台四大參與者", back: "開發者、企業客戶、雲端供應商、產業合作夥伴" }, { front: "平台鎖定機制", back: "技術鎖定、學習曲線鎖定、生態系統鎖定、效能鎖定" }, { front: "CUDA 策略", back: "免費提供 SDK 吸引開發者，透過生態系統鎖定用戶" }],
+                                    themes: [
+                                        {
+                                            title: "先發優勢", subThemes: [
+                                                { title: "CUDA 基礎（2006）", content: "NVIDIA 發布 CUDA 結構為 GPU 平行運算鋪路，在 AI 爆發前數年佔據先機。" },
+                                                { title: "AI 定位（2012）", content: "AlexNet 使用 NVIDIA GPU 贏得 ImageNet，鎖定公司走向 AI 之路。" },
+                                                { title: "ChatGPT 時代（2023）", content: "H100 GPU 讓 NVIDIA 不可或缺——Meta、Microsoft 成為「恐慌性買家」。" }
+                                            ]
+                                        },
+                                        {
+                                            title: "平台鎖定效應", subThemes: [
+                                                { title: "完整解決方案", content: "GPU + 軟體 + 顧問服務創造鎖定客戶並吸引開發者的生態系統。" },
+                                                { title: "防禦性定價", content: "LHR 節流和分層 SKU 防禦市場份額對抗 AMD 的競爭定價。" },
+                                                { title: "溢價定位", content: "高密度技術和品牌形象在 AI 晶片保持溢價定價，避免價格戰。" }
+                                            ]
+                                        },
+                                        {
+                                            title: "差異化行銷", subThemes: [
+                                                { title: "CPU 市場進入", content: "Grace ARM CPU 只在異構運算需求明顯後推出，從一開始就與 GPU 深度整合。" },
+                                                { title: "Chiplet 策略", content: "觀察 AMD MI300 市場反應後才在 Blackwell 世代引入多晶片封裝。" },
+                                                { title: "策略耐心", content: "等待最佳時機，讓整合平台方法提供最大差異化。" }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "NVIDIA 何時發布 CUDA？", back: "2006 年——在 AI 爆發前數年為 GPU 平行運算鋪路。" },
+                                        { front: "2012 年的轉折點是什麼？", back: "AlexNet 使用 NVIDIA GPU 贏得 ImageNet，鎖定公司走向 AI 之路。" },
+                                        { front: "NVIDIA 如何創造鎖定？", back: "銷售完整解決方案：GPU + 軟體 + 顧問服務，鎖定客戶並吸引開發者。" },
+                                        { front: "NVIDIA 的顯示卡防禦策略", back: "LHR 節流和分層 SKU 來控制價格和防禦市場份額對抗 AMD。" },
+                                        { front: "Grace CPU 進入策略", back: "等待異構運算需求後才推出，從一開始就與 GPU 深度整合。" },
+                                        { front: "Blackwell Chiplet 決策", back: "先觀察 AMD MI300 反應，再引入多晶片封裝，平衡技術成熟度與風險。" }
+                                    ],
                                     quiz: [
-                                        { q: "NVIDIA 平台的四大參與者群體是？", options: ["只有開發者", "開發者、企業、雲端、產業", "只有企業客戶", "只有雲端供應商"], answer: 1 },
-                                        { q: "「平台鎖定」是什麼意思？", options: ["物理鎖定設備", "透過生態系統創造高轉換成本", "法律合約鎖定", "價格鎖定"], answer: 1 },
-                                        { q: "NVIDIA 的治理模式是？", options: ["完全開放", "完全封閉", "開放但受控", "去中心化"], answer: 2 }
+                                        {
+                                            q: "NVIDIA 何時發布 CUDA，為 GPU 平行運算奠定基礎？",
+                                            options: ["2002 年", "2006 年", "2010 年", "2012 年"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "2012 年什麼事件標誌著 NVIDIA 轉向 AI 的關鍵轉折點？",
+                                            options: ["GeForce RTX 發布", "AlexNet 使用 NVIDIA GPU 贏得 ImageNet", "CUDA 平台推出", "收購 ARM"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "NVIDIA 的主要平台鎖定策略是什麼？",
+                                            options: ["低價策略", "GPU + 軟體 + 顧問整合生態系統", "獨家遊戲合作", "僅專利保護"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "什麼是 NVIDIA 的「差異化行銷策略」？",
+                                            options: ["積極價格競爭", "等待正確時機並避免紅海競爭", "僅專注遊戲市場", "立即在所有市場直接競爭"],
+                                            answer: 1
+                                        }
                                     ],
-                                    references: ["https://hiddenflag.org/nvidia-platform-strategy", "https://www.nvidia.com/en-us/about-nvidia/"]
+                                    references: ["https://vocus.cc/article/6804db71fd89780001959d56"]
                                 }
                             },
                             {
                                 id: "coopetition", title: "共競分析", icon: "fa-handshake", content: {
-                                    highlights: ["雲端巨頭（AWS、Google、Azure）同時是 NVIDIA 的合作夥伴和競爭者", "合作：雲端供應商大量採購 NVIDIA GPU 提供雲端服務", "競爭：科技巨頭開發自研晶片（Google TPU、AWS Trainium）試圖減少對 NVIDIA 的依賴"],
+                                    highlights: ["NVIDIA 的市場涉及複雜的關係，與既是客戶又是競爭者的參與者互動", "PARTS 框架：參與者、附加價值、規則、策略、範疇", "控制超過 80% 用於建構 AI 系統的晶片市場"],
                                     fullArticle: [
-                                        { title: "什麼是共競？", paragraphs: ["共競 (Co-opetition) 是指企業同時與其他企業競爭和合作的策略關係。在 NVIDIA 的案例中，雲端巨頭是典型的共競對象：", "他們既是 NVIDIA 最大的客戶（合作），同時也在開發自己的 AI 晶片（競爭）。"] },
-                                        { title: "NVIDIA 與雲端巨頭的共競關係", paragraphs: ["• AWS：是 NVIDIA GPU 的最大買家之一，但開發了 Trainium 和 Inferentia 自研晶片。", "• Google：大量使用 NVIDIA GPU，但也有自己的 TPU 系列晶片。", "• Microsoft/Azure：與 NVIDIA 緊密合作，但投資 OpenAI 並探索替代方案。", "• Meta：使用 NVIDIA GPU 訓練 Llama，但正在開發自研 AI 晶片。"] },
-                                        { title: "PM 如何管理共競關係", paragraphs: ["PM 在共競關係中扮演關鍵角色：", "1. 識別共競對象：分析哪些公司既是客戶又是潛在競爭者。", "2. 最大化合作價值：確保產品滿足合作夥伴需求，強化依賴關係。", "3. 監控競爭動態：追蹤合作夥伴的自研計畫和替代品開發。", "4. 建立轉換障礙：透過技術整合和專屬功能增加客戶黏性。"] }
+                                        {
+                                            title: "參與者（Players）", paragraphs: [
+                                                "NVIDIA 的市場遊戲涉及與經常同時是客戶和競爭者的參與者之間的複雜關係，形成一個多變但高價值的生態系統。",
+                                                "• 直接競爭者：包括傳統晶片對手如 AMD（Radeon GPU、MI400 加速器）和 Intel（獨立 GPU、Gaudi 3 AI 晶片）。",
+                                                "• 超大規模競爭者-客戶：主要雲端供應商同時為其資料中心購買數千億美元的 NVIDIA 硬體，並開發自己的客製晶片（ASIC）以減少對 NVIDIA 的依賴。這些包括 Google（TPU）、Amazon/AWS（Trainium/Inferentia）、Microsoft 和 Meta Platforms。",
+                                                "• 關鍵供應鏈合作夥伴（供應商）：NVIDIA 的成功關鍵依賴於幾個高槓桿供應商，包括台積電（先進晶片製造）和 SK Hynix（先進記憶體），以及台灣伺服器/ODM 廠商如鴻海和廣達電腦進行伺服器組裝。"
+                                            ]
+                                        },
+                                        {
+                                            title: "策略共競與互補者發展", paragraphs: [
+                                                "PM 必須分析整個價值網路（客戶、供應商、競爭者、互補者）來確定最佳方法——合作（做大餅）還是競爭（分餅）。",
+                                                "• 擁抱「雙面人」動態：承認大多數合作夥伴（包括 JDM/ODM、客戶和供應商）既是競爭者也是互補者。PM 的角色是通過專注於互補面來找到雙贏方案，以擴大整個市場。",
+                                                "• 積極培養互補者：將市場拓展努力集中在使 NVIDIA 產品更具吸引力的合作夥伴（軟體開發者、雲端供應商、AI 解決方案提供商）。",
+                                                "• 管理矩陣式團隊：內部團隊（硬體、軟體、行銷）也被視為參與者。PM 必須通過強大的領導力來領導和影響這些團隊，因為直接權力通常有限。"
+                                            ]
+                                        },
+                                        {
+                                            title: "附加價值（Added Values）", paragraphs: [
+                                                "NVIDIA 的附加價值源於其在高效能 AI 硬體上的近乎壟斷地位和專有軟體生態系統。",
+                                                "• AI 硬體主導地位：控制超過 80% 用於建構 AI 系統的晶片（GPU）市場，使其能夠推動產業前進。",
+                                                "• 整合軟體平台（CUDA）：專有的 CUDA 軟體平台成為 AI 的標準程式語言，創造一個重要的生態系統和對競爭者的高壁壘。",
+                                                "• AI 革命的基礎設施：NVIDIA 晶片是為 ChatGPT 等 AI 應用提供動力的全球資料中心的核心組件，突顯其在推動美國 GDP 成長中的關鍵角色。",
+                                                "• 財務表現：主導地位已轉化為創紀錄的財務表現，於 2025 年底成為第一家達到 5 兆美元估值的上市公司。"
+                                            ]
+                                        },
+                                        {
+                                            title: "最大化不可替代的貢獻", paragraphs: [
+                                                "PM 的成功與產品對整體系統的獨特、不可替代的貢獻息息相關：",
+                                                "• 量化並增加附加價值：持續推動優先事項，利用 AI、深度學習（DL）和專業硬體/軟體的技術優勢，創造競爭對手難以輕易複製的解決方案。",
+                                                "• 快速整合反饋：通過在上市後持續關注客戶問題和反饋，保持持續品質改進，以增加產品的感知和實際價值。",
+                                                "• 避免市場供應不足：謹慎限制供應，因為增加短期利潤可能以犧牲長期生態系統成長和客戶忠誠度為代價。"
+                                            ]
+                                        },
+                                        {
+                                            title: "規則（Rules）", paragraphs: [
+                                                "NVIDIA 的策略規則主要專注於建立專有生態系統、不懈創新和市場創造。",
+                                                "• 生態系統鎖定（CUDA）：這個專有平台被超過 400 萬開發者使用，創造高轉換成本。客戶必須購買 NVIDIA 硬體才能使用優化的軟體，有效地將競爭者排除在外。",
+                                                "• 持續創新：公司保持快速的硬體創新節奏（Hopper、Blackwell），以確保其產品仍然是高效能 AI 的預設選擇，在技術上領先於競爭對手。",
+                                                "• 藍海策略：NVIDIA 通過啟用全新應用（自動駕駛汽車、大型語言模型）而非僅在現有市場競爭，創造了新的、無競爭的市場空間，使其能夠收取溢價價格。"
+                                            ]
+                                        },
+                                        {
+                                            title: "結構化參與和激勵", paragraphs: [
+                                                "規則定義遊戲的約束（合約、法律、慣例）。PM 應該積極尋找可以改變以利於專案的規則：",
+                                                "• 為合作夥伴定義明確期望：對 JDM/ODM 合作夥伴實施嚴格的合約「規則」，以符合 NVIDIA 對產品品質、製造和及時交付的期望，將風險降至最低。",
+                                                "• 策略性應用新規則：在提出新規格或里程碑時，反向推理以預測合作夥伴的反應。如果最合理的預期反應是有利的，則規則是有效的。"
+                                            ]
+                                        },
+                                        {
+                                            title: "策略（Tactics）", paragraphs: [
+                                                "NVIDIA 使用多管齊下的策略，專注於全棧優化、確保供應和控制開發者敘事。",
+                                                "• 培養無價的軟體生態系統：CUDA 在 AI 爆發前數年就為開發者提供了強大的「黏性」工具，導致高轉換成本。",
+                                                "• 不懈的硬體創新（系統級設計）：專注於 Grace Hopper 超級晶片等整合平台，打破傳統瓶頸，而不僅僅是個別晶片。",
+                                                "• 確保供應鏈產能：通過與台積電合作並推動需求，NVIDIA 確保了世界大部分的供應產能，使競爭對手難以擴大生產規模。",
+                                                "• 價值導向定價和行銷：採用以無與倫比的效能為依據的溢價、價值導向定價策略，同時使用 GTC 等大型活動和數位行銷來接觸多樣化的受眾。",
+                                                "• 地緣政治風險緩解：通過開發更低規格的合規晶片並多元化供應鏈，回應美國對中國市場的出口管制。"
+                                            ]
+                                        },
+                                        {
+                                            title: "溝通與認知管理", paragraphs: [
+                                                "PM 的策略是用來改變其他參與者認知、影響其未來行動的舉措：",
+                                                "• 練習異位思考：在向內部或高層團隊溝通產品狀態時，預測他們的擔憂並相應地包裝訊息以影響決策。",
+                                                "• 主動提升風險：主動向高層團隊提升風險和障礙。這種策略通過塑造他們對專案複雜性的認知來確保必要的資源和支持。"
+                                            ]
+                                        },
+                                        {
+                                            title: "範疇（Scope）", paragraphs: [
+                                                "NVIDIA 的策略範疇已成功從遊戲圖形擴展到成為全球 AI 和高效能運算（HPC）革命的基礎架構師。",
+                                                "• 四大主要市場：資料中心（最大且成長最快，支援主權 AI）、遊戲（GeForce，保持主導地位）、專業視覺化（RTX 工作站用於 3D 渲染）和汽車（DRIVE 平台用於自動駕駛汽車和機器人）。",
+                                                "• 全棧垂直整合：範疇由提供包含 GPU、網路和 CUDA 專有軟體生態系統的全面、垂直整合系統定義，創造強大的「生態系統鎖定」。",
+                                                "• 學術深耕：NVIDIA 通過在大學課程和研究實驗室中整合 CUDA，確保持續的全球人才庫在其平台上受訓，鞏固長期主導地位。",
+                                                "• 策略敘事：CEO 黃仁勳將產業未來圍繞 NVIDIA 的能力（「AI 工廠」、「物理 AI」）來闡述，將公司定位為主要數位轉型工作的不可或缺夥伴。"
+                                            ]
+                                        },
+                                        {
+                                            title: "定義遊戲邊界", paragraphs: [
+                                                "PM 必須意識到範疇定義了遊戲的邊界及其與相鄰市場的關係：",
+                                                "• 連結遊戲以獲取互利：積極尋找將當前遊戲與其他遊戲連結的機會以擴大整體市場。例如，將 GPU 架構成功與 AI 工具和雲端服務連結，擴大創造的總價值。",
+                                                "• 防止負面連鎖效應：保持整體視角，了解一個產品區塊的變化如何可能負面連鎖到另一個區塊，防止對更大業務造成自我傷害。",
+                                                "• 改變遊戲是持續過程：認識到「改變遊戲」是一個需要使用 PARTS 檢查清單進行持續自我診斷的持續過程。"
+                                            ]
+                                        }
                                     ],
-                                    themes: [{ title: "共競對象", subThemes: [{ title: "AWS", content: "最大客戶之一，但開發 Trainium 自研晶片。" }, { title: "Google", content: "使用 NVIDIA GPU，但有自己的 TPU。" }, { title: "Microsoft", content: "緊密合作，但投資 OpenAI 探索替代方案。" }] }],
-                                    flashcards: [{ front: "什麼是共競？", back: "企業同時與其他企業競爭和合作的策略關係" }, { front: "NVIDIA 的主要共競對象", back: "AWS、Google、Microsoft、Meta 等雲端巨頭" }, { front: "雲端巨頭為何開發自研晶片", back: "減少對 NVIDIA 的依賴，降低成本，客製化優化" }],
+                                    themes: [{ title: "PARTS 框架", subThemes: [{ title: "參與者", content: "直接競爭者（AMD、Intel）、超大規模競爭者-客戶（Google、AWS、Microsoft、Meta）、關鍵供應商（台積電、SK Hynix、鴻海）" }, { title: "附加價值", content: "80% AI 晶片市佔率、CUDA 生態系統、AI 革命基礎設施、5 兆美元估值" }, { title: "規則", content: "CUDA 生態系統鎖定、持續創新（Hopper、Blackwell）、藍海策略" }] }, { title: "策略戰術", subThemes: [{ title: "軟體生態系統", content: "CUDA 提供具高轉換成本的黏性工具" }, { title: "供應鏈", content: "台積電合作確保世界大部分先進晶片產能" }, { title: "定價", content: "以無與倫比效能為依據的價值導向溢價定價" }] }, { title: "市場範疇", subThemes: [{ title: "四大市場", content: "資料中心、遊戲（GeForce）、專業視覺化（RTX）、汽車（DRIVE）" }, { title: "垂直整合", content: "全棧：GPU + 網路 + CUDA 軟體生態系統" }, { title: "學術策略", content: "在大學整合 CUDA 確保長期人才管道" }] }],
+                                    flashcards: [{ front: "PARTS 框架", back: "參與者、附加價值、規則、策略、範疇——共競策略分析框架" }, { front: "NVIDIA 市佔率", back: "控制超過 80% 用於建構 AI 系統的晶片市場" }, { front: "主要競爭者", back: "AMD（Radeon、MI400）、Intel（Gaudi 3）、Google（TPU）、AWS（Trainium/Inferentia）" }, { front: "CUDA 鎖定", back: "被 400 萬+ 開發者使用，創造高轉換成本——客戶必須購買 NVIDIA 硬體" }, { front: "藍海策略", back: "創造新的無競爭市場（自動駕駛、LLM）而非在現有「紅海」競爭" }, { front: "四大主要市場", back: "資料中心、遊戲（GeForce）、專業視覺化（RTX）、汽車（DRIVE）" }],
                                     quiz: [
-                                        { q: "什麼是「共競」策略？", options: ["只有合作", "只有競爭", "同時合作和競爭", "不合作也不競爭"], answer: 2 },
-                                        { q: "雲端巨頭與 NVIDIA 的關係是？", options: ["純粹合作夥伴", "純粹競爭對手", "共競對象 - 既合作又競爭", "沒有關係"], answer: 2 },
-                                        { q: "為什麼雲端巨頭開發自研晶片？", options: ["只是為了好玩", "減少對 NVIDIA 的依賴", "NVIDIA 不賣給他們", "法律要求"], answer: 1 }
-                                    ],
-                                    references: ["https://www.ft.com/content/nvidia-cloud-coopetition", "https://hyperbrain.me/insights/nvidia"]
+                                        {
+                                            q: "在策略分析框架中，PARTS 代表什麼？",
+                                            options: ["產品、資產、收入、技術、策略", "參與者、附加價值、規則、策略、範疇", "定價、收購、保留、轉型、規模", "合作、聯盟、資源、趨勢、銷售"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "NVIDIA 控制了多少 AI 晶片市場？",
+                                            options: ["超過 50%", "超過 60%", "超過 70%", "超過 80%"],
+                                            answer: 3
+                                        },
+                                        {
+                                            q: "什麼是 NVIDIA 的藍海策略？",
+                                            options: ["積極價格競爭", "創造新的無競爭市場而非在現有市場競爭", "僅專注於遊戲 GPU", "僅與雲端供應商合作"],
+                                            answer: 1
+                                        },
+                                        {
+                                            q: "NVIDIA 的主要晶片製造合作夥伴是哪家公司？",
+                                            options: ["Intel", "Samsung", "台積電", "GlobalFoundries"],
+                                            answer: 2
+                                        }
+                                    ]
                                 }
                             }
                         ]
@@ -1712,59 +1985,220 @@
                         id: 2, title: "3. 總結", icon: "fa-flag-checkered", color: "green",
                         subsections: [
                             {
-                                id: "faq", title: "常見問答", icon: "fa-question-circle",
+                                id: "faq",
+                                title: "常見問答",
+                                icon: "fa-question-circle",
                                 content: {
-                                    highlights: ["關於 NVIDIA、PM 角色和我們分析的常見問題解答", "對本互動履歷涵蓋的關鍵策略概念進行澄清", "提供深入探索主題的資源"],
-                                    fullArticle: [
-                                        { title: "NVIDIA 相關問題", paragraphs: ["Q: NVIDIA 主要做什麼？\nA: NVIDIA 是一家平台公司，整合 GPU 硬體、CUDA 軟體生態系統和開發者社群，為 AI、遊戲和資料中心提供解決方案。", "Q: 為什麼 NVIDIA 在 AI 領域如此成功？\nA: NVIDIA 的成功來自三個因素：(1) 先發優勢 - 早在 2006 年就推出 CUDA；(2) 生態系統鎖定 - 400 萬+ 開發者；(3) 持續創新 - Blackwell 架構等新產品。"] },
-                                        { title: "PM 角色問題", paragraphs: ["Q: 在 NVIDIA 擔任 PM 需要什麼技能？\nA: 技術理解力（GPU、AI 基礎）、策略思維（平台策略、生態系統管理）、跨部門溝通能力，以及對開發者社群的理解。", "Q: NVIDIA PM 與一般 PM 有何不同？\nA: NVIDIA PM 更像是「生態系統架構師」，需要管理跨產業（汽車、醫療、雲端）的平台生命週期和互操作性。"] }
+                                    highlights: [
+                                        "關於 NVIDIA、PM 角色和我們分析的常見問題解答",
+                                        "對本互動履歷涵蓋的關鍵策略概念進行澄清",
+                                        "提供深入探索主題的資源"
                                     ],
-                                    themes: [{ title: "關鍵洞察", subThemes: [{ title: "NVIDIA 的護城河", content: "CUDA 生態系統創造的鎖定效應是 NVIDIA 最強大的護城河。" }, { title: "PM 角色", content: "在 NVIDIA，PM 是生態系統架構師，不只是功能經理。" }] }],
-                                    flashcards: [{ front: "NVIDIA 的核心護城河", back: "CUDA 生態系統擁有 400 萬+ 開發者，創造巨大轉換成本" }, { front: "NVIDIA PM 角色", back: "生態系統架構師 - 管理平台生命週期和跨產業互操作性" }],
+                                    fullArticle: [
+                                        {
+                                            title: "關於 NVIDIA",
+                                            paragraphs: [
+                                                "Q: 為什麼 NVIDIA 的市值達到 5 兆美元？",
+                                                "A: NVIDIA 前所未有的估值源於其在 AI 運算領域的主導地位。公司控制超過 80% 的 AI 晶片市場，其 CUDA 生態系統已成為 AI 開發的產業標準。AI 應用（ChatGPT、自動駕駛等）的爆發性成長直接使 NVIDIA 受益。",
+                                                "Q: NVIDIA 與其他晶片公司有何不同？",
+                                                "A: NVIDIA 不僅僅是硬體公司——它是一家平台公司。它將 GPU 硬體、CUDA 軟體和開發者生態系統整合成一個相互強化的系統。這創造了網路效應：更多開發者使用 CUDA → 更強的 GPU 需求 → 競爭對手更高的轉換成本。"
+                                            ]
+                                        },
+                                        {
+                                            title: "關於 PM 角色",
+                                            paragraphs: [
+                                                "Q: 在 NVIDIA 擔任 PM 做什麼？",
+                                                "A: 與傳統功能經理不同，NVIDIA 的 PM 作為生態系統架構師運作。他們管理平台生命週期、確保向後相容性，並協調跨產業互操作性。他們必須駕馭共競動態，其中 AWS 和 Google 等合作夥伴同時也在開發競爭加速器。",
+                                                "Q: 在 NVIDIA 擔任 PM 需要什麼技能？",
+                                                "A: AMC 框架適用：對替代創新（TPU、AI ASIC）的認知，維持生態系統主導地位的動機，以及通過軟體優化和服務擴展（Enterprise AI、Omniverse、DGX Cloud）來回應的能力。"
+                                            ]
+                                        },
+                                        {
+                                            title: "關於此專案",
+                                            paragraphs: [
+                                                "Q: 為什麼創建互動式履歷而非傳統簡歷？",
+                                                "A: 我們希望通過行動而非僅憑言語來展示我們的能力。這份互動式履歷展示了：策略分析技能、對平台商業模式的理解、技術實作能力，以及用戶體驗設計思維——這些都是 PM 的核心能力。",
+                                                "Q: 使用了什麼技術？",
+                                                "A: React 用於組件式 UI、Tailwind CSS 用於樣式設計，以及原生 JavaScript。整個應用是一個單一 HTML 檔案，便於部署和展示。"
+                                            ]
+                                        }
+                                    ],
+                                    themes: [
+                                        {
+                                            title: "關於 NVIDIA", subThemes: [
+                                                { title: "Q: 為什麼估值 5 兆美元？", content: "AI 運算主導地位（80%+ 市佔率）、CUDA 生態系統鎖定，以及爆發性 AI 需求（ChatGPT 時代）。營收從 FY2024 $60.9B 成長到 FY2025 $130.5B。" },
+                                                { title: "Q: NVIDIA 的護城河是什麼？", content: "擁有 400 萬+ 開發者的 CUDA 生態系統創造高轉換成本。硬體 + 軟體 + 生態系統的平台整合幾乎不可能複製。" },
+                                                { title: "Q: 主要競爭者？", content: "AMD（Radeon、MI 系列）、Intel（Gaudi）、Google（TPU）、AWS（Trainium/Inferentia）。然而，所有競爭者都面臨 CUDA 生態系統壁壘。" }
+                                            ]
+                                        },
+                                        {
+                                            title: "關於 NVIDIA PM", subThemes: [
+                                                { title: "Q: PM 的主要角色？", content: "生態系統架構師，管理平台生命週期、向後相容性和跨產業互操作性——不僅是功能管理。" },
+                                                { title: "Q: 主要挑戰？", content: "駕馭共競：主要雲端合作夥伴（AWS、Google Cloud、Azure）同時也在開發競爭加速器。必須維持有說服力的價值主張。" },
+                                                { title: "Q: AMC 框架？", content: "認知（了解替代品）、動機（推動主導地位）、能力（通過優化和擴展來回應的技術商業技能）。" }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "NVIDIA 的核心護城河", back: "擁有 400 萬+ 開發者的 CUDA 生態系統，創造不可逾越的轉換成本" },
+                                        { front: "NVIDIA PM 角色", back: "生態系統架構師，而非功能經理——管理平台生命週期和跨產業互操作性" },
+                                        { front: "關鍵營收里程碑", back: "FY2025 營收：$130.5B（從 FY2024 的 $60.9B），TTM 達 $187B" }
+                                    ],
                                     quiz: [
                                         { q: "根據常見問答，NVIDIA 控制多少 AI 晶片市場？", options: ["超過 50%", "超過 60%", "超過 70%", "超過 80%"], answer: 3 },
                                         { q: "根據本頁，NVIDIA PM 扮演什麼角色？", options: ["功能經理", "銷售代表", "生態系統架構師", "專案經理"], answer: 2 },
-                                        { q: "NVIDIA PM 需要什麼框架技能？", options: ["SWOT 框架", "BCG 矩陣", "AMC 框架", "波特五力"], answer: 2 },
+                                        { q: "本頁提到 NVIDIA PM 需要什麼框架技能？", options: ["SWOT 框架", "BCG 矩陣", "AMC 框架", "波特五力"], answer: 2 },
                                         { q: "這份互動履歷使用什麼技術建構？", options: ["Python 和 Django", "React 和 Tailwind CSS", "Vue 和 Bootstrap", "Angular 和 Material UI"], answer: 1 }
                                     ]
                                 }
                             },
                             {
-                                id: "review", title: "知識回顧", icon: "fa-book-open",
+                                id: "review",
+                                title: "知識回顧",
+                                icon: "fa-graduation-cap",
                                 content: {
-                                    highlights: ["回顧 NVIDIA 商業模式和策略的關鍵要點", "鞏固對 PM 角色和所需技能的理解", "測試你的整體學習成果"],
+                                    highlights: [
+                                        "從導論和洞察章節綜合回顧所有關鍵概念",
+                                        "以知識型問題測試你的理解",
+                                        "策略框架總結：PARTS、波特五力、藍海策略"
+                                    ],
                                     fullArticle: [
-                                        { title: "NVIDIA 商業模式回顧", paragraphs: ["NVIDIA 有四大業務區塊：(1) 遊戲 - GeForce GPU；(2) 資料中心 - H100、A100 和 DGX 系統；(3) 專業視覺化 - 設計和內容創作工具；(4) 汽車 - DRIVE 自駕平台。", "資料中心業務現佔營收 88%，是成長最快的區塊，由 AI 訓練和推論需求驅動。"] },
-                                        { title: "策略框架回顧", paragraphs: ["• PARTS 框架：分析參與者、附加價值、規則、策略和範圍。", "• 波特五力：評估競爭強度、新進入者威脅、替代品威脅、供應商和買家議價力。", "• 藍海策略：NVIDIA 透過創造新市場（AI 加速器）而非在紅海競爭來取得領先。"] }
+                                        {
+                                            title: "NVIDIA 商業概覽",
+                                            paragraphs: [
+                                                "• 成立：1993 年由黃仁勳創立（FT 2025 年度人物）",
+                                                "• 市值：5 兆美元（2025 年 10 月）- 第一家達到此里程碑的公司",
+                                                "• 營收：FY2025 $130.5B（TTM $187B）vs FY2024 $60.9B",
+                                                "• AI 晶片市佔率：超過 80%",
+                                                "• 四大業務區塊：資料中心、遊戲（GeForce）、專業視覺化（RTX）、汽車（DRIVE）"
+                                            ]
+                                        },
+                                        {
+                                            title: "關鍵產品與技術",
+                                            paragraphs: [
+                                                "• CUDA：統一運算設備架構（2006）- 400 萬+ 開發者",
+                                                "• Blackwell（2024）：2080 億電晶體，效率比 Hopper 高 25 倍",
+                                                "• Grace Hopper：GH200 超級晶片 - Arm CPU + Hopper GPU，900 GB/s 頻寬",
+                                                "• H100/H200：當前 AI 資料中心主力（Hopper 架構）",
+                                                "• Omniverse：3D 設計協作和數位孿生平台"
+                                            ]
+                                        },
+                                        {
+                                            title: "策略框架應用",
+                                            paragraphs: [
+                                                "1. PARTS 框架：參與者（AMD、Intel、超大規模）、附加價值（80% AI 市佔率、CUDA）、規則（生態系統鎖定）、策略（軟體生態系統、台積電合作）、範疇（四大市場）",
+                                                "2. 波特五力：進入威脅低（CUDA 壁壘）、供應商議價力中等、買家議價力中高（大型科技開發自研晶片）",
+                                                "3. 藍海策略：創造新的無競爭市場（自動駕駛、LLM）而非紅海競爭",
+                                                "4. 平台鎖定：GPU + 軟體 + 顧問 → 具高轉換成本的整合生態系統"
+                                            ]
+                                        }
                                     ],
-                                    themes: [{ title: "業務回顧", subThemes: [{ title: "四大業務", content: "遊戲、資料中心、專業視覺化、汽車。" }, { title: "最大業務", content: "資料中心佔營收 88%。" }] }],
-                                    flashcards: [{ front: "NVIDIA 四大業務區塊", back: "遊戲、資料中心、專業視覺化、汽車" }, { front: "最大營收來源", back: "資料中心業務佔 88%" }],
+                                    themes: [
+                                        {
+                                            title: "NVIDIA 數據一覽", subThemes: [
+                                                { title: "財務里程碑", content: "市值：$5T（2025 年 10 月）。營收：$130.5B FY2025，$187B TTM。成長：YoY 114%。" },
+                                                { title: "市場地位", content: "80%+ AI 晶片市佔率。400 萬+ CUDA 開發者。史上第一家 $5T 公司。" },
+                                                { title: "產品組合", content: "Blackwell（2080 億電晶體）、Grace Hopper（900 GB/s）、H100/H200、GeForce RTX、DRIVE、Omniverse" }
+                                            ]
+                                        },
+                                        {
+                                            title: "策略概念", subThemes: [
+                                                { title: "PARTS 框架", content: "參與者、附加價值、規則、策略、範疇——全面的共競分析工具" },
+                                                { title: "平台鎖定", content: "CUDA 生態系統創造網路效應：開發者 → GPU 需求 → 轉換成本" },
+                                                { title: "藍海策略", content: "創造新市場（AI、自動駕駛）而非在現有「紅海」競爭" }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "NVIDIA 成立", back: "1993 年由黃仁勳在加州聖克拉拉創立" },
+                                        { front: "市值里程碑", back: "2025 年 10 月達 5 兆美元——史上第一家" },
+                                        { front: "CUDA 推出年份", back: "2006 年——現有 400 萬+ 開發者" },
+                                        { front: "AI 晶片市佔率", back: "超過 80%——AI 運算領域的主導地位" },
+                                        { front: "Blackwell 規格", back: "2080 億電晶體，效率比 Hopper 高 25 倍，2024 年推出" },
+                                        { front: "PARTS 框架", back: "參與者、附加價值、規則、策略、範疇" }
+                                    ],
                                     quiz: [
-                                        { q: "NVIDIA 最大的業務區塊是？", options: ["遊戲", "資料中心", "汽車", "專業視覺化"], answer: 1 },
-                                        { q: "CUDA 平台是哪一年推出的？", options: ["2002", "2006", "2010", "2016"], answer: 1 },
-                                        { q: "PARTS 框架分析什麼？", options: ["只有價格", "參與者、附加價值、規則、策略、範圍", "只有競爭者", "只有客戶"], answer: 1 },
-                                        { q: "藍海策略的核心是？", options: ["在現有市場競爭", "創造新市場空間", "降低價格", "增加廣告"], answer: 1 }
-                                    ],
-                                    isConclusion: true
+                                        { q: "回顧中提到的 NVIDIA 四大業務區塊是什麼？", options: ["AI、遊戲、雲端、物聯網", "資料中心、遊戲、專業視覺化、汽車", "GPU、CPU、記憶體、儲存", "硬體、軟體、服務、顧問"], answer: 1 },
+                                        { q: "根據回顧，NVIDIA 哪一年推出 CUDA？", options: ["2001", "2004", "2006", "2010"], answer: 2 },
+                                        { q: "PARTS 框架中的「A」代表什麼？", options: ["分析", "附加價值", "收購", "資產"], answer: 1 },
+                                        { q: "根據本頁，藍海策略的核心是什麼？", options: ["積極價格競爭", "創造新的無競爭市場", "收購競爭者", "全球擴張"], answer: 1 }
+                                    ]
                                 }
                             },
                             {
-                                id: "glossary", title: "詞彙與術語", icon: "fa-spell-check",
+                                id: "glossary",
+                                title: "詞彙與術語",
+                                icon: "fa-book",
                                 content: {
-                                    highlights: ["本分析使用的技術和商業術語完整詞彙表", "NVIDIA 產品和技術的快速參考", "策略框架定義"],
-                                    fullArticle: [
-                                        { title: "技術術語", paragraphs: ["• GPU (圖形處理器)：專門用於平行運算的處理器，是 AI 訓練的核心硬體。", "• CUDA：NVIDIA 的平行運算平台，讓開發者能使用 GPU 進行一般運算。", "• Tensor Core：NVIDIA GPU 中專門用於 AI/ML 矩陣運算的硬體單元。", "• Blackwell：NVIDIA 2024 年推出的下一代 GPU 架構。"] },
-                                        { title: "商業術語", paragraphs: ["• 平台策略：建立連接多方參與者的商業生態系統。", "• 鎖定效應：創造高轉換成本，使客戶難以離開。", "• 護城河 (Moat)：保護市場地位的可持續競爭優勢。", "• 共競 (Co-opetition)：同時與其他企業合作和競爭的策略。"] }
+                                    highlights: [
+                                        "本分析使用的技術和商業術語完整詞彙表",
+                                        "NVIDIA 產品和技術的快速參考",
+                                        "策略框架定義"
                                     ],
-                                    themes: [{ title: "技術術語", subThemes: [{ title: "GPU", content: "圖形處理器，AI 訓練的核心硬體。" }, { title: "CUDA", content: "NVIDIA 的平行運算平台。" }] }],
-                                    flashcards: [{ front: "Tensor Core", back: "NVIDIA GPU 中專門用於 AI/ML 矩陣運算的硬體單元" }, { front: "平台鎖定", back: "透過生態系統創造高轉換成本，使客戶難以離開" }],
+                                    fullArticle: [
+                                        {
+                                            title: "技術術語",
+                                            paragraphs: [
+                                                "• GPU（圖形處理器）：專門用於平行運算的處理器，最初用於圖形但現在對 AI/ML 至關重要",
+                                                "• CUDA（統一運算設備架構）：NVIDIA 的平行運算平台和 API，實現 GPU 加速運算",
+                                                "• Tensor Core：專門用於深度學習訓練和推論中矩陣運算的硬體單元",
+                                                "• Blackwell：NVIDIA 2024 年 GPU 架構，2080 億電晶體，為生成式 AI 時代設計",
+                                                "• Grace Hopper：GH200 超級晶片結合 Arm Grace CPU 和 Hopper GPU，具 900 GB/s 記憶體頻寬",
+                                                "• Omniverse：NVIDIA 的 3D 設計協作、模擬和數位孿生平台"
+                                            ]
+                                        },
+                                        {
+                                            title: "商業與策略術語",
+                                            paragraphs: [
+                                                "• 平台公司：將硬體、軟體和生態系統整合成相互強化系統的商業模式",
+                                                "• 網路效應：隨著更多用戶加入價值增加（例如更多 CUDA 開發者 → 更強 GPU 需求）",
+                                                "• 鎖定效應：使客戶留在生態系統內的高轉換成本",
+                                                "• 共競（Co-opetition）：同時與其他公司合作和競爭（例如 NVIDIA + 雲端供應商）",
+                                                "• 藍海策略：創造新的無競爭市場空間而非在現有「紅海」市場競爭",
+                                                "• 護城河（Moat）：保護市場地位的可持續競爭優勢"
+                                            ]
+                                        },
+                                        {
+                                            title: "策略框架",
+                                            paragraphs: [
+                                                "• PARTS 框架：參與者、附加價值、規則、策略、範疇——用於分析共競動態",
+                                                "• 波特五力：進入壁壘、供應商議價力、買家議價力、替代品、競爭——用於產業分析",
+                                                "• AMC 框架：認知、動機、能力——用於競爭回應分析",
+                                                "• TAM（總可及市場）：產品或服務的總營收機會"
+                                            ]
+                                        }
+                                    ],
+                                    themes: [
+                                        {
+                                            title: "NVIDIA 產品", subThemes: [
+                                                { title: "CUDA", content: "統一運算設備架構——NVIDIA 的平行運算平台，擁有 400 萬+ 開發者" },
+                                                { title: "Blackwell", content: "2024 GPU 架構：2080 億電晶體，效率比 Hopper 高 25 倍，B100/B200/GB200 產品線" },
+                                                { title: "Grace Hopper", content: "GH200 超級晶片結合 Arm CPU 和 Hopper GPU，900 GB/s 頻寬" },
+                                                { title: "Omniverse", content: "3D 設計協作、模擬和數位孿生平台" }
+                                            ]
+                                        },
+                                        {
+                                            title: "策略術語", subThemes: [
+                                                { title: "平台鎖定", content: "整合生態系統（硬體 + 軟體 + 服務）創造的高轉換成本" },
+                                                { title: "共競", content: "同時合作和競爭——例如 AWS 既是客戶也是競爭者" },
+                                                { title: "藍海策略", content: "創造新的無競爭市場而非在現有「紅海」市場競爭" },
+                                                { title: "PARTS 框架", content: "參與者、附加價值、規則、策略、範疇——共競分析工具" }
+                                            ]
+                                        }
+                                    ],
+                                    flashcards: [
+                                        { front: "GPU", back: "圖形處理器——專門用於平行運算的處理器，對 AI 至關重要" },
+                                        { front: "CUDA", back: "統一運算設備架構——NVIDIA 的平行運算平台" },
+                                        { front: "平台鎖定", back: "硬體 + 軟體 + 服務整合生態系統創造的高轉換成本" },
+                                        { front: "共競", back: "同時與同一家公司合作和競爭" },
+                                        { front: "藍海策略", back: "創造新的無競爭市場而非在現有市場競爭" }
+                                    ],
                                     quiz: [
-                                        { q: "Tensor Core 是什麼？", options: ["一種 CPU", "NVIDIA GPU 中專門用於 AI 矩陣運算的硬體單元", "一種軟體", "一種網路設備"], answer: 1 },
-                                        { q: "「平台鎖定」的商業意涵是？", options: ["物理鎖定設備", "透過整合生態系統創造高轉換成本", "專利保護", "獨家合作夥伴關係"], answer: 1 },
+                                        { q: "根據詞彙表，Tensor Core 專門用於什麼？", options: ["圖形渲染", "深度學習中的矩陣運算", "網路通訊", "儲存管理"], answer: 1 },
+                                        { q: "根據本頁，「平台鎖定」是什麼意思？", options: ["低價吸引客戶", "整合生態系統創造的高轉換成本", "獨家合作", "專利保護"], answer: 1 },
                                         { q: "Grace Hopper 超級晶片結合什麼？", options: ["兩個 GPU", "Arm Grace CPU 和 Hopper GPU", "Intel CPU 和 NVIDIA GPU", "AMD CPU 和 NVIDIA GPU"], answer: 1 },
                                         { q: "商業術語中的「護城河」是什麼意思？", options: ["一種硬體", "保護市場地位的可持續競爭優勢", "行銷策略", "財務指標"], answer: 1 }
-                                    ],
-                                    isConclusion: true
+                                    ]
                                 }
                             },
                             {
@@ -1899,7 +2333,17 @@
 
 
         // 知識點測驗組件 - 選擇題格式
-        const QuizCard = ({ questions, answers, onAnswer, label }) => {
+        const QuizCard = ({ questions, answers, onAnswer, label, lang }) => {
+            // 多語言文字
+            const texts = lang === 'zh' ? {
+                correct: '答對了！做得好！',
+                correctAnswer: '正確答案是：',
+                score: '得分'
+            } : {
+                correct: 'Correct! Great job!',
+                correctAnswer: 'The correct answer is: ',
+                score: 'Score'
+            };
             const [currentIndex, setCurrentIndex] = useState(0);
             const [showResult, setShowResult] = useState(false);
 
@@ -2010,7 +2454,7 @@
                         {isAnswered && (
                             <div className={`mt-3 p-2 rounded-lg text-xs ${isCorrect ? 'bg-green-900/30 text-green-400' : 'bg-red-900/30 text-red-400'}`}>
                                 <i className={`fas ${isCorrect ? 'fa-check-circle' : 'fa-info-circle'} mr-2`}></i>
-                                {isCorrect ? 'Correct! Great job!' : `The correct answer is: ${String.fromCharCode(65 + q.answer)}`}
+                                {isCorrect ? texts.correct : `${texts.correctAnswer}${String.fromCharCode(65 + q.answer)}`}
                             </div>
                         )}
                     </div>
@@ -2057,7 +2501,13 @@
         };
 
         // Flashcard 輪播元件 - 一次只顯示一張
-        const FlashcardCarousel = ({ flashcards, label }) => {
+        const FlashcardCarousel = ({ flashcards, label, lang }) => {
+            // 多語言文字
+            const texts = lang === 'zh' ? {
+                tapToFlip: '點擊翻轉'
+            } : {
+                tapToFlip: 'Tap to flip'
+            };
             const [currentIndex, setCurrentIndex] = useState(0);
             const [flipped, setFlipped] = useState(false);
 
@@ -2097,7 +2547,7 @@
                                 </div>
                                 <h3 className="text-sm font-bold gradient-text text-center leading-tight">{card.front}</h3>
                                 <div className="mt-2 text-[10px] text-gray-500">
-                                    <i className="fas fa-hand-pointer mr-1 animate-pulse"></i>Tap to flip
+                                    <i className="fas fa-hand-pointer mr-1 animate-pulse"></i>{texts.tapToFlip}
                                 </div>
                             </div>
                             {/* 背面 */}
@@ -2227,7 +2677,7 @@
                         <p className="text-sm italic text-gray-300 pl-8 leading-relaxed">"{team.reflection}"</p>
                         <div className="flex items-center mt-3 pl-8">
                             <div className="h-px flex-1 bg-gradient-to-r from-nvidia/30 to-transparent"></div>
-                            <span className="text-[10px] text-nvidia ml-3">Team Insight</span>
+                            <span className="text-[10px] text-nvidia ml-3">團隊心得</span>
                         </div>
                     </div>
                 )}
@@ -2236,9 +2686,15 @@
 
 
         // PM 工作連結專區組件 - 使用卡片式可折疊布局
-        const JobConnectionSection = ({ jobConnection }) => {
+        const JobConnectionSection = ({ jobConnection, lang }) => {
             const [expanded, setExpanded] = useState(true);
             if (!jobConnection) return null;
+
+            const texts = lang === 'zh' ? {
+                viewJob: '查看此 PM 職缺'
+            } : {
+                viewJob: 'View This PM Job Posting'
+            };
 
             return (
                 <div className="info-card mt-4">
@@ -2301,7 +2757,7 @@
                                     className="flex items-center justify-center gap-2 w-full py-3 bg-nvidia text-nvidia-black rounded-lg font-bold text-sm hover:bg-nvidia-light transition-all btn-pulse glow-nvidia-sm"
                                 >
                                     <i className="fas fa-external-link-alt text-xs"></i>
-                                    <span>View This PM Job Posting</span>
+                                    <span>{texts.viewJob}</span>
                                     <i className="fas fa-arrow-right text-xs"></i>
                                 </a>
                             )}
@@ -2452,6 +2908,17 @@
             const [expandedSections, setExpandedSections] = useState({});
             const toggleSection = (idx) => setExpandedSections(p => ({ ...p, [idx]: !p[idx] }));
 
+            // UI 多語言文字
+            const uiTexts = lang === 'zh' ? {
+                deepDive: '深度分析',
+                sections: '個章節',
+                keyHighlights: '重點概覽'
+            } : {
+                deepDive: 'Deep Dive Analysis',
+                sections: 'sections',
+                keyHighlights: 'Key Highlights'
+            };
+
             // 如果是學習總結頁面，渲染特殊的總結組件
             if (c.isSummary && c.summaryContent) {
                 return (
@@ -2522,8 +2989,8 @@
                                             <i className="fas fa-book-reader text-nvidia-black"></i>
                                         </div>
                                         <div>
-                                            <h3 className="font-bold gradient-text">Deep Dive Analysis</h3>
-                                            <p className="text-xs text-gray-500">{c.fullArticle.length} sections</p>
+                                            <h3 className="font-bold gradient-text">{uiTexts.deepDive}</h3>
+                                            <p className="text-xs text-gray-500">{c.fullArticle.length} {uiTexts.sections}</p>
                                         </div>
                                     </div>
                                     <div className="hidden md:flex items-center gap-1">
